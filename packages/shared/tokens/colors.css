@@ -1,3 +1,12 @@
+/**
+ * colors.css
+ *
+ * Core color palette tokens based on Untitled UI's system.
+ * These are raw (non-semantic) tokens organized by color family and weight.
+ *
+ * Use these for mapping into semantic roles (e.g., background, text, status)
+ * in a separate file like semantic-colors.css.
+ */
 :root {
     /* Gray */
     --gray-25: #FCFCFD;

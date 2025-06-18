@@ -1,0 +1,21 @@
+/**
+ * motion.css
+ *
+ * Motion and transition tokens defining timing durations and easing curves
+ * used for UI animations. Helps ensure consistency across all animated elements.
+ *
+ * Values are based on best practices from Untitled UI design system 
+ * focused on smooth, intentional motion.
+ */
+
+:root {
+  /* Duration scale */
+  --duration-fast: 150ms;   /* Micro-interactions, hovers */
+  --duration-base: 250ms;   /* Standard transitions */
+  --duration-slow: 400ms;   /* Dialogs, overlays, more complex animations */
+
+  /* Easing functions */
+  --easing-standard: cubic-bezier(0.4, 0, 0.2, 1); /* Default UI ease */
+  --easing-in: cubic-bezier(0.4, 0, 1, 1);         /* Accelerate in */
+  --easing-out: cubic-bezier(0, 0, 0.2, 1);        /* Decelerate out */
+}

@@ -1,0 +1,16 @@
+/**
+ * shadows.css
+ *
+ * Shadow tokens for applying consistent elevation and depth across UI components.
+ * Based on soft, layered shadows typical in modern flat design systems (like Untitled UI).
+ *
+ * These shadows are used for buttons, cards, modals, tooltips, and overlays.
+ * You can map them semantically (e.g., --shadow-button) in another file if needed.
+ */
+
+:root {
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);    /* Micro-shadow, used for inner elements */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);    /* Subtle elevation for controls */
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);    /* Card-like shadows */
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.12);   /* Modals, drawers */
+}

@@ -1,6 +1,6 @@
 # components-lab
 
-A cross-framework UI component lab for clean, scalable frontend design.  
+A cross-framework UI component lab for clean, scalable frontend design based on https://www.untitledui.com/.
 Reusable, accessible components built from scratch in multiple frameworks. Starting with React, expanding soon to Angular and others.
 
 ## Project Structure
@@ -60,3 +60,8 @@ npm run dev
 ## License
 
 MIT – free to use, adapt, or contribute.
+
+### Fonts
+
+Inter by Rasmus Andersson is used under the SIL Open Font License v1.1  
+https://github.com/rsms/inter

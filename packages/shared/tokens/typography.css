@@ -1,0 +1,35 @@
+/**
+ * typography.css
+ *
+ * Design tokens for typography. These define consistent font families, sizes,
+ * weights, and line heights across the design system.
+ *
+ * Based on Untitled UI’s use of the Inter font and modular scale typography.
+ * Adjust values as needed to fit your specific type ramp.
+ */
+
+:root {
+  /* Font family */
+  --font-sans: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;     /* 12px - captions, labels */
+  --font-size-sm: 0.875rem;    /* 14px - secondary text, controls */
+  --font-size-base: 1rem;      /* 16px - body text */
+  --font-size-md: 1.125rem;    /* 18px - subheadings */
+  --font-size-lg: 1.25rem;     /* 20px - headings */
+  --font-size-xl: 1.5rem;      /* 24px - section titles */
+  --font-size-2xl: 1.875rem;   /* 30px - page titles */
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-xs: 1.25;
+  --line-height-sm: 1.375;
+  --line-height-base: 1.5;
+  --line-height-lg: 1.75;
+}
