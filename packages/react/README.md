@@ -5,7 +5,7 @@ This package is the React-based implementation of the UI Component Lab, built fo
 It uses Vite with TypeScript and PostCSS to provide a modern, fast development environment. Global design tokens (colors, typography, spacing, etc.) are shared via `@shared/tokens`.
 
 ## Folder Structure
-
+```
 packages/react/
 ├── button/               # First component (WIP)
 │   ├── Button.tsx
@@ -17,7 +17,7 @@ packages/react/
 ├── index.html
 ├── vite.config.ts
 └── ...
-
+```
 ## Getting Started
 
 From the project root:
