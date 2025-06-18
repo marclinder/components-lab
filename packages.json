@@ -1,0 +1,15 @@
+{
+  "name": "components-lab",
+  "description": "A collection of reusable UI components for web applications based on the Untitled UI design system.",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "echo 'Add build script per package'",
+    "dev": "echo 'Use package-specific dev scripts'"
+  },
+  "license": "MIT"
+}
