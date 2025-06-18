@@ -1,9 +1,14 @@
 /**
  * fonts.css
  *
- * Self-hosted Inter font-family with weights 400 (Regular), 500 (Medium), and 700 (Bold).
+ * Self-hosted Inter font-family.
+ * Includes the following weights and styles:
+ * - 300 (Light)        – Normal & Italic
+ * - 400 (Regular)      – Normal & Italic
+ * - 500 (Medium)       – Normal & Italic
+ * - 700 (Bold)         – Normal & Italic
  */
-
+ 
 @font-face {
   font-family: 'Inter';
   font-weight: 300;
