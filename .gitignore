@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+build/
+.esbuild/
+
+# Vite
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Figma tokens or plugin exports (optional)
+*.figma-tokens.json
+figma-tokens/
+
+# Storybook build output
+storybook-static/
+
+# Cache
+.cache/
+*.tsbuildinfo
+
+# Lint and test
+coverage/
+*.log
+
+# Optional: macOS/Linux swap or temp files
+*.swp
+*.tmp
