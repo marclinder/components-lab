@@ -51,7 +51,6 @@ export function ButtonDemo() {
                     </Button>
                 </div>
 
-
                 <h2>Icon Only</h2>
                 <div className="demo-row">
                     <Button variant="primary" size='sm' iconOnly>
