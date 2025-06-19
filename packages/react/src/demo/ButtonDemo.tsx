@@ -1,5 +1,6 @@
 import { Button } from '../button';
 import './_demo_layout.css';
+import * as Icon from 'react-feather';
 
 export function ButtonDemo() {
     return (
@@ -37,16 +38,16 @@ export function ButtonDemo() {
                 <h2>Icon Buttons</h2>
                 <div className="demo-row">
                     <Button variant="primary">
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Activity size={20} />
                         Icon Button
                     </Button>
                     <Button variant="secondary">
                         Icon Button
-                        <img width="20" src="/svg/dot.svg" alt="Dot icon" />
+                        <Icon.Check size={20} color="#12B76A"/>
                     </Button>
                     <Button variant="tertiary">
                         Icon Button
-                        <img width="20" src="/svg/dot.svg" alt="Dot icon" />
+                        <Icon.Send size={20} style={{ color: 'var(--color-brand)' }}/>
                     </Button>
                 </div>
 
