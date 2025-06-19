@@ -1,0 +1,124 @@
+/* ==========================================================================
+   BUTTON MODULE — CSS NESTING VERSION
+   Requires PostCSS or native browser support for nesting
+========================================================================== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  border: var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: var(--transition-bg);
+  box-shadow: var(--shadow-button);
+  gap: var(--space-8);
+
+  /* === Sizes === */
+  &.sm {
+    padding: var(--space-8) var(--space-14);
+    font-size: var(--font-size-14);
+  }
+
+  &.md {
+    padding: var(--space-10) var(--space-16);
+    font-size: var(--font-size-16);
+  }
+
+  &.lg {
+    padding: var(--space-10) var(--space-18);
+    font-size: var(--font-size-16);
+  }
+
+  &.xl {
+    padding: var(--space-12) var(--space-20);
+    font-size: var(--font-size-16);
+  }
+
+  /* === Variants === */
+  &.primary {
+    background-color: var(--color-brand);
+    color: var(--color-text-inverse);
+    border-color: var(--color-brand);
+
+    &:hover:not(.disabled) {
+      background-color: var(--color-brand-hover);
+      border-color: var(--color-brand-hover);
+    }
+
+    &.disabled {
+      background-color: var(--color-brand-disabled);
+      color: var(--color-text-inverse-disabled);
+      border-color: var(--color-brand-disabled);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-secondary);
+    border-color: var(--color-border);
+
+    &.disabled {
+      background-color: var(--color-bg-disabled);
+      color: var(--color-text-disabled);
+      border-color: var(--color-border-disabled);
+    }
+  }
+
+  &.tertiary {
+    background-color: transparent !important;
+    color: var(--color-brand);
+    border-color: var(--color-brand);
+
+    &.disabled {
+      background-color: transparent;
+      color: var(--color-brand-disabled);
+      border-color: var(--color-brand-disabled);
+    }
+  }
+
+  &.link {
+    background-color: transparent !important;
+    color: var(--color-brand);
+    border-color: transparent;
+    padding: 0;
+    border-radius: var(--space-4);
+    box-shadow: none;
+    outline-offset: var(--space-4);
+
+    &:hover:not(.disabled) {
+      color: var(--color-text-secondary);
+      text-decoration: underline;
+    }
+
+    &.disabled {
+      color: var(--color-brand-disabled);
+      text-decoration: none;
+    }
+  }
+
+  /* === States === */
+  &:focus-visible {
+    outline: var(--space-4) solid var(--color-focus-ring);
+    outline-offset: var(--font-size-1);
+    box-shadow: var(--shadow-lg);
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
+  /* === Icon Only === */
+  &.iconOnly {
+    aspect-ratio: 1 / 1;
+    padding: 0;
+
+    &.sm { padding: var(--space-8); }
+    &.md { padding: var(--space-10); }
+    &.lg { padding: var(--space-12); }
+    &.xl { padding: var(--space-14); }
+  }
+}

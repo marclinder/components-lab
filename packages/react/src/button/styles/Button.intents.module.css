@@ -1,0 +1,24 @@
+
+/* ==========================================================================
+   Icon Only Buttons
+========================================================================== */
+.iconOnly {
+  aspect-ratio: 1 / 1;
+  padding: 0;
+}
+
+.sm.iconOnly {
+  padding: var(--space-8);
+}
+
+.md.iconOnly {
+  padding: var(--space-10);
+}
+
+.lg.iconOnly {
+  padding: var(--space-12);
+}
+
+.xl.iconOnly {
+  padding: var(--space-14);
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 import { clsx } from 'clsx';
-import styles from './Button.module.css';
+import intentVariants from './styles/Button.module.css';
+import coreStyles from './styles/Button.module.css';
+
+const styles = { ...coreStyles, ...intentVariants };
 
 /**
  * Visual variants and sizes for Button
