@@ -47,7 +47,7 @@ export function ButtonDemo() {
                     </Button>
                     <Button variant="tertiary">
                         Icon Button
-                        <Icon.Send size={20} style={{ color: 'var(--color-brand)' }} />
+                        <Icon.Send size={20} style={{ color: 'currentColor' }} />
                     </Button>
                 </div>
 

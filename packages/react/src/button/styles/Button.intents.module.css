@@ -2,81 +2,62 @@
    VARIANTS
    Semantic variants to convey message tone or importance.
 ========================================================================== */
-  
-  .danger {
-    background-color: var(--color-danger-bg);
-    color: var(--color-danger-text);
-    border-color: var(--color-danger-border);
+/* ==========================================================================
+   INTENTS
+   Semantic variants to convey message tone or importance.
+========================================================================== */
+.success {
+  --color-bg: var(--color-success);
+  --color-border: var(--color-success);
+  --color-text: var(--color-on-success);
 
-    &:hover:not(.disabled) {
-      background-color: var(--color-danger-bg-hover);
-      border-color: var(--color-danger-border-hover);
-    }
+  --color-hover-bg: var(--color-success-hover);
+  --color-hover-border: var(--color-success-hover);
+  --color-hover-text: var(--color-on-success);
 
-    &.disabled {
-      background-color: var(--color-danger-bg-disabled);
-      color: var(--color-danger-text-disabled);
-      border-color: var(--color-danger-border-disabled);
-    }
-  }
+  --color-disabled-bg: var(--color-success-disabled);
+  --color-disabled-border: var(--color-success-disabled);
+  --color-disabled-text: var(--color-on-success-disabled);
+}
 
-  .warning {
-    background-color: var(--color-warning-bg);
-    color: var(--color-warning-text);
-    border-color: var(--color-warning-border);
+.error {
+  --color-bg: var(--color-error);
+  --color-border: var(--color-error);
+  --color-text: var(--color-on-error);
 
-    &:hover:not(.disabled) {
-      background-color: var(--color-warning-bg-hover);
-      border-color: var(--color-warning-border-hover);
-    }
+  --color-hover-bg: var(--color-error-hover);
+  --color-hover-border: var(--color-error-hover);
+  --color-hover-text: var(--color-on-error);
 
-    &.disabled {
-      background-color: var(--color-warning-bg-disabled);
-      color: var(--color-warning-text-disabled);
-      border-color: var(--color-warning-border-disabled);
-    }
-  }
+  --color-disabled-bg: var(--color-error-disabled);
+  --color-disabled-border: var(--color-error-disabled);
+  --color-disabled-text: var(--color-on-error-disabled);
+}
 
-  .success {
-    background-color: var(--color-success-bg);
-    color: var(--color-success-text);
-    border-color: var(--color-success-border);
+.warning {
+  --color-bg: var(--color-warning);
+  --color-border: var(--color-warning);
+  --color-text: var(--color-on-warning);
 
-    &:hover:not(.disabled) {
-      background-color: var(--color-success-bg-hover);
-      border-color: var(--color-success-border-hover);
-    }
+  --color-hover-bg: var(--color-warning-hover);
+  --color-hover-border: var(--color-warning-hover);
+  --color-hover-text: var(--color-on-warning);
 
-    &.disabled {
-      background-color: var(--color-success-bg-disabled);
-      color: var(--color-success-text-disabled);
-      border-color: var(--color-success-border-disabled);
-    }
-  }
+  --color-disabled-bg: var(--color-warning-disabled);
+  --color-disabled-border: var(--color-warning-disabled);
+  --color-disabled-text: var(--color-on-warning-disabled);
+}
 
-  .info {
-    background-color: var(--color-info-bg);
-    color: var(--color-info-text);
-    border-color: var(--color-info-border);
+.info {
+  --color-bg: var(--color-info);
+  --color-border: var(--color-info);
+  --color-text: var(--color-on-info);
 
-    &:hover:not(.disabled) {
-      background-color: var(--color-info-bg-hover);
-      border-color: var(--color-info-border-hover);
-    }
+  --color-hover-bg: var(--color-info-hover);
+  --color-hover-border: var(--color-info-hover);
+  --color-hover-text: var(--color-on-info);
 
-    &.disabled {
-      background-color: var(--color-info-bg-disabled);
-      color: var(--color-info-text-disabled);
-      border-color: var(--color-info-border-disabled);
-    }
-  }
-
-  .iconOnly {
-    aspect-ratio: 1 / 1;
-    padding: 0;
-
-    &.sm { padding: var(--space-8); }
-    &.md { padding: var(--space-10); }
-    &.lg { padding: var(--space-12); }
-    &.xl { padding: var(--space-14); }
-  }
+  --color-disabled-bg: var(--color-info-disabled);
+  --color-disabled-border: var(--color-info-disabled);
+  --color-disabled-text: var(--color-on-info-disabled);
+}
