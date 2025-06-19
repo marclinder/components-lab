@@ -54,19 +54,19 @@ export function ButtonDemo() {
                 <h2>Icon Only</h2>
                 <div className="demo-row">
                     <Button variant="primary" size='sm' iconOnly>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Airplay size={20} />
                     </Button>
                     <Button variant="primary" size='md' iconOnly>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Anchor size={20} />
                     </Button>
                     <Button variant="primary" size='lg' iconOnly>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Aperture size={20} />
                     </Button>
                     <Button variant="primary" size='xl' iconOnly>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Archive size={20} />
                     </Button>
                     <Button variant="primary" size='xl' iconOnly disabled>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        <Icon.Award size={20} />
                     </Button>
                 </div>
             </section>
@@ -80,14 +80,14 @@ export function ButtonDemo() {
                     <Button variant="primary" intent="success">Success</Button>
                     <Button variant="secondary" intent="warning">Warning</Button>
                     <Button variant="tertiary" intent="error">Error</Button>
-                    <Button variant="link" intent="info">Info</Button>
+                    <Button variant="link" intent="info" className='align-self-center'>Info</Button>
                 </div>
-                
+
                 <div className="demo-row">
                     <Button variant="primary" intent="success" disabled>Success</Button>
                     <Button variant="secondary" intent="warning" disabled>Warning</Button>
                     <Button variant="tertiary" intent="error" disabled>Error</Button>
-                    <Button variant="link" intent="info" disabled>Info</Button>
+                    <Button variant="link" intent="info" disabled className='align-self-center'>Info</Button>
                 </div>
             </section>
 
@@ -97,8 +97,8 @@ export function ButtonDemo() {
                     You can pass custom classes to adjust layout, spacing, or transitions as needed.
                 </p>
                 <div className="demo-row">
-                    <Button className="btn-shadow-funky">Funky Button</Button>
-                    <Button size="sm" className="btn-bg-funky">Funky Button</Button>
+                    <Button className="btn-shadow-funky">Custom Button</Button>
+                    <Button size="sm" className="btn-bg-funky">Custom Button</Button>
                 </div>
             </section>
         </>
