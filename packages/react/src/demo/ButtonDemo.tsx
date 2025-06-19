@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import './_demo-layout.css';
+import './_layout.css';
 
 export function ButtonDemo() {
   return (
