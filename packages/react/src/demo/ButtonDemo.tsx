@@ -15,9 +15,9 @@ export function ButtonDemo() {
                     <Button variant="primary" action={() => window.alert('Click')}>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="ghost">Ghost</Button>
-                    <Button variant="ghost">
+                    <Button variant="primary" size='sm'>
                         <img width="20" src="/svg/circle.svg" alt="Circle icon" />
-                        Ghost
+                        Button Icon
                     </Button>
                 </div>
 

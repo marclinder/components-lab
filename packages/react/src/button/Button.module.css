@@ -6,6 +6,7 @@
   font-family: inherit;
   cursor: pointer;
 
+  gap: var(--space-8);
   font-weight: var(--font-weight-semibold);
   border: var(--border-default);
   border-radius: var(--radius-lg);
