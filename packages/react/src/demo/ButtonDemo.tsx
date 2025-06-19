@@ -14,18 +14,16 @@ export function ButtonDemo() {
                 <div className="demo-row">
                     <Button variant="primary" action={() => window.alert('Click')}>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
-                    <Button variant="ghost">Ghost</Button>
-                    <Button variant="primary">
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
-                        Button Icon
-                    </Button>
+                    <Button variant="tertiary">Tertiary</Button>
+                    <Button variant="link">Link</Button>
                 </div>
 
                 <h2>Disabled</h2>
                 <div className="demo-row">
                     <Button variant="primary" disabled>Primary</Button>
                     <Button variant="secondary" disabled>Secondary</Button>
-                    <Button variant="ghost" disabled>Ghost</Button>
+                    <Button variant="tertiary" disabled>Tertiary</Button>
+                    <Button variant="link" disabled>Link</Button>
                 </div>
 
                 <h2>Sizes</h2>
@@ -35,6 +33,19 @@ export function ButtonDemo() {
                     <Button size="lg">Large</Button>
                     <Button size="xl">Extra Large</Button>
                 </div>
+
+                <h2>Icon Buttons</h2>
+                <div className="demo-row">
+                    <Button variant="primary">
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        Button Icon
+                    </Button>
+                    <Button variant="secondary">
+                        Button Icon
+                        <img width="20" src="/svg/dot.svg" alt="Dot icon" />
+                    </Button>
+                </div>
+
 
                 <h2>Icon Only</h2>
                 <div className="demo-row">

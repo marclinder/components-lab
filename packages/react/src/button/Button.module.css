@@ -1,3 +1,6 @@
+/* ==========================================================================
+   BASE
+========================================================================== */
 .button {
   display: inline-flex;
   align-items: center;
@@ -14,7 +17,9 @@
   box-shadow: var(--shadow-button);
 }
 
-/* Sizes */
+/* ==========================================================================
+   SIZES
+========================================================================== */
 .sm {
   padding: var(--space-8) var(--space-14);
   font-size: var(--font-size-14);
@@ -35,7 +40,9 @@
   font-size: var(--font-size-16);
 }
 
-/* Variants */
+/* ==========================================================================
+   Variants
+========================================================================== */
 .primary {
   background-color: var(--color-brand);
   color: var(--color-text-inverse);
@@ -55,17 +62,26 @@
 
 .secondary {
   background-color: var(--color-bg-subtle);
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   border-color: var(--color-border);
 }
 
-.ghost {
+.tertiary {
   background-color: transparent !important;
   color: var(--color-brand);
   border-color: var(--color-brand);
 }
 
-/* Disabled */
+.link {
+  background-color: transparent !important;
+  color: var(--color-brand);
+  border-color: transparent;
+  padding: 0px;
+}
+
+/* ==========================================================================
+   States
+========================================================================== */
 .disabled {
   background-color: var(--color-brand-disabled);
   color: var(--color-text-disabled);
@@ -73,7 +89,9 @@
   opacity: 0.7;
 }
 
-/* Icon-only buttons */
+/* ==========================================================================
+   Icon Only Buttons
+========================================================================== */
 .iconOnly {
   aspect-ratio: 1 / 1;
   padding: 0;
@@ -94,3 +112,7 @@
 .xl.iconOnly {
   padding: var(--space-14);
 }
+
+/* ==========================================================================
+   INTENTS (e.g. Destructive)
+========================================================================== */
