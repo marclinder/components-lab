@@ -1,30 +1,21 @@
 /**
  * semantic-colors.css
  *
- * This file defines semantic design tokens that map to core color primitives.
- * Instead of referencing raw colors like `--gray-900` or `--brand-600` directly,
- * components should use these role-based tokens (e.g. `--color-text-primary`, `--color-error`).
- *
- * Benefits:
- * - Improves clarity and maintainability by using intent-based naming
- * - Enables easy theming (e.g. light/dark mode) by swapping underlying mappings
- * - Decouples design decisions from implementation details
- *
- * Example usage:
- *   .button {
- *     background-color: var(--color-brand);
- *     color: var(--color-text-primary);
- *   }
- *
- * These tokens should be used across all components to ensure visual consistency.
+ * Maps core color tokens (defined in colors.css) to role-based, semantic tokens.
+ * Use these tokens in components to communicate *intent* rather than implementation.
  */
 :root {
+  /* Primitive extensions (define if needed) */
+  --white: #ffffff;
+  --black: #000000;
+
   /* Base text and surface colors */
   --color-text-primary: var(--gray-900);
   --color-text-secondary: var(--gray-700);
   --color-text-disabled: var(--gray-500);
-  --color-text-muted: var(--color-gray-500);
-  --color-text-inverse: var(--color-white);
+  --color-text-muted: var(--gray-500);
+  --color-text-inverse: var(--white);
+
   --color-bg-default: var(--gray-50);
   --color-bg-subtle: var(--gray-100);
   --color-border: var(--gray-300);
@@ -33,21 +24,28 @@
   --color-brand: var(--brand-600);           /* Used for buttons, links, active elements */
   --color-brand-hover: var(--brand-700);     /* Hover state for primary actions */
   --color-brand-disabled: var(--brand-300);  /* Disabled brand usage */
+  --color-on-brand: var(--white);            /* Text/icon color on brand background */
 
   /* Semantic status roles */
-  --color-error: var(--red-600);             /* Used for errors, destructive actions */
+  --color-error: var(--red-600);
   --color-error-bg: var(--red-50);
-  --color-warning: var(--yellow-600);        /* Used for alerts, cautions */
+  --color-on-error: var(--white);
+
+  --color-warning: var(--yellow-600);
   --color-warning-bg: var(--yellow-50);
-  --color-success: var(--green-600);         /* Used for confirmations, success states */
+  --color-on-warning: var(--black);
+
+  --color-success: var(--green-600);
   --color-success-bg: var(--green-50);
-  --color-info: var(--blue-600);             /* Used for neutral or informative content */
+  --color-on-success: var(--white);
+
+  --color-info: var(--blue-600);
   --color-info-bg: var(--blue-50);
+  --color-on-info: var(--white);
 
   /* Focus and interaction highlights */
-  --color-focus-ring: var(--blue-300);       /* Used for keyboard focus outlines */
+  --color-focus-ring: var(--blue-300);
 
-  /* Backdrop or overlay effects */
-  --color-overlay: rgba(0, 0, 0, 0.4);        /* Used for modals, toasts, etc. */
-
+  /* Overlays */
+  --color-overlay: rgba(0, 0, 0, 0.4);
 }

@@ -1,33 +1,63 @@
 import React from 'react';
+import { clsx } from 'clsx';
 import styles from './Button.module.css';
 
-type ButtonProps = {
+/**
+ * Visual variants and sizes for Button
+ */
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
+export type ButtonSize = 'lg' | 'md' | 'sm';
+/**
+ * Button component props
+ */
+export type ButtonProps = {
+  /** Callback triggered on click */
+  action?: () => void | Promise<void>;
+  /** Button label or children */
   children: React.ReactNode;
-  onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
+  /** Visual variant of the button (default: 'primary') */
+  variant?: ButtonVariant;
+  /** Visual size of the button (default: 'lg') */
+  size?: ButtonSize;
+  /** Optional extra class names */
+  className?: string;
+  /** Whether the button is disabled */
   disabled?: boolean;
 };
 
-export const Button = ({
+/**
+ * Primary UI button component used across the design system.
+ *
+ * Supports three visual variants and size presets. Handles
+ * async or sync click callbacks and accepts optional styling extensions.
+ */
+export const Button: React.FC<ButtonProps> = ({
   children,
-  onClick,
-  variant = 'primary',
-    size = 'md',
+  className,
   disabled = false,
-}: ButtonProps) => {
-  const className = [
+  action,
+  variant = 'primary',
+  size = 'md',
+}) => {
+
+  const defaultClassName = clsx(
     styles.button,
-    styles[variant],
     styles[size],
+    styles[variant],
     disabled && styles.disabled,
-  ]
-    .filter(Boolean)
-    .join(' ');
+    className
+  );
 
   return (
-    <button onClick={onClick} className={className} disabled={disabled}>
+    <button
+      type="button"
+      disabled={disabled}
+      onClick={action}
+      className={defaultClassName}
+    >
       {children}
     </button>
   );
 };
+
+export default Button;

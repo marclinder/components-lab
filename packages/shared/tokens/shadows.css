@@ -13,4 +13,7 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);    /* Subtle elevation for controls */
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);    /* Card-like shadows */
   --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.12);   /* Modals, drawers */
+
+  /* Semantic shadow for buttons */
+  --shadow-button: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }

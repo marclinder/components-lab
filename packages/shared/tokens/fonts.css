@@ -6,6 +6,7 @@
  * - 300 (Light)        – Normal & Italic
  * - 400 (Regular)      – Normal & Italic
  * - 500 (Medium)       – Normal & Italic
+ * - 500 (Semi Medium)       – Normal & Italic
  * - 700 (Bold)         – Normal & Italic
  */
  
@@ -55,6 +56,22 @@
   font-style: italic;
   font-display: swap;
   src: url('/fonts/inter/Inter-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/inter/Inter-SemiBoldItalic.woff2') format('woff2');
 }
 
 @font-face {

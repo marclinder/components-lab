@@ -2,29 +2,47 @@ import { Button } from '../button';
 import './_layout.css';
 
 export function ButtonDemo() {
-  return (
-    <section className="demo">
-      <h1>Button Variants</h1>
+    return (
+        <>
+            <section className="demo">
+                <h2 className="title">Button Variants</h2>
 
-      <div className="demo-row">
-        <Button variant="primary">Primary</Button>
-        <Button variant="secondary">Secondary</Button>
-        <Button variant="ghost">Ghost</Button>
-      </div>
+                <p className="description">
+                    Use different button variants to express hierarchy and intent across your interface.
+  Primary buttons highlight key actions, secondary buttons offer alternatives, and ghost buttons provide minimal styling for low-emphasis actions.
+                </p>
 
-      <h2>Disabled</h2>
-      <div className="demo-row">
-        <Button variant="primary" disabled>Primary</Button>
-        <Button variant="secondary" disabled>Secondary</Button>
-        <Button variant="ghost" disabled>Ghost</Button>
-      </div>
+                <div className="demo-row">
+                    <Button variant="primary">Primary</Button>
+                    <Button variant="secondary">Secondary</Button>
+                    <Button variant="ghost">Ghost</Button>
+                </div>
 
-      <h2>Sizes</h2>
-      <div className="demo-row">
-        <Button size="sm">Small</Button>
-        <Button size="md">Medium</Button>
-        <Button size="lg">Large</Button>
-      </div>
-    </section>
-  );
+                <h2>Disabled</h2>
+                <div className="demo-row">
+                    <Button variant="primary" disabled>Primary</Button>
+                    <Button variant="secondary" disabled>Secondary</Button>
+                    <Button variant="ghost" disabled>Ghost</Button>
+                </div>
+
+                <h2>Sizes</h2>
+                <div className="demo-row">
+                    <Button size="sm">Small</Button>
+                    <Button size="md">Medium</Button>
+                    <Button size="lg">Large</Button>
+                </div>
+            </section>
+            <section className="demo">
+                <h2 className="title">Custom ClassName Example</h2>
+                <p className="description">
+                    You can pass custom classes to adjust layout, spacing, or transitions as needed.
+                </p>
+
+                <div className="demo-row">
+                    <Button className="pt-space-4">With top padding</Button>
+                    <Button className="btn-bg-funky">Funky Bg</Button>
+                </div>
+            </section>
+        </>
+    );
 }

@@ -18,4 +18,8 @@
   --easing-standard: cubic-bezier(0.4, 0, 0.2, 1); /* Default UI ease */
   --easing-in: cubic-bezier(0.4, 0, 1, 1);         /* Accelerate in */
   --easing-out: cubic-bezier(0, 0, 0.2, 1);        /* Decelerate out */
+
+  /* Common transitions */
+  --transition-bg: background-color var(--duration-base) var(--easing-standard);
+  --transition-all: all var(--duration-base) var(--easing-standard);
 }
