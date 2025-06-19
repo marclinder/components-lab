@@ -7,7 +7,6 @@
  * These tokens should be used to maintain rhythm and modular scale throughout
  * the UI, especially in component padding, layout spacing, and grid systems.
  */
-
 :root {
   --space-0: 0;        /* No space */
   --space-1: 4px;      /* Tight spacing - used for icon gaps, micro adjustments */
@@ -16,7 +15,14 @@
   --space-4: 16px;     /* Base spacing - standard padding for inputs/buttons */
   --space-5: 20px;     /* Slightly looser than base - card content padding */
   --space-6: 24px;     /* Used for section spacing or moderate gaps */
+  --space-7: 28px;     /* Intermediary step for tighter large layouts */
   --space-8: 32px;     /* Large vertical space between elements */
+  --space-9: 36px;     /* Minor step below hero/page spacing */
   --space-10: 40px;    /* Hero layout spacing */
+  --space-11: 44px;    /* Optional in-between for responsive tuning */
   --space-12: 48px;    /* Page-level spacing and large containers */
+  --space-16: 64px;    /* Section or hero top/bottom padding */
+  --space-20: 80px;    /* Full-bleed layout blocks, major cards */
+  --space-24: 96px;    /* Page padding - side margins on wide screens */
+  --space-30: 120px;   /* Major gaps between sections or zones */
 }

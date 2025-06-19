@@ -4,12 +4,13 @@ h1, h2 {
 
 .demo {
     margin: var(--space-12);
+    padding: var(--padding-section);
 }
 
 .demo-row {
     display: flex;
     gap: var(--space-3);
-    box-shadow: var(--shadow-sm);
     padding: var(--space-2);
     margin-bottom: var(--space-8);
+    box-shadow: var(--shadow-sm);
 }

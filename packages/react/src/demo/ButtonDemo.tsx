@@ -1,10 +1,10 @@
 import { Button } from '../button';
-import './demo.css';
+import './_demo-layout.css';
 
 export function ButtonDemo() {
   return (
     <section className="demo">
-      <h2>Button Variants</h2>
+      <h1>Button Variants</h1>
 
       <div className="demo-row">
         <Button variant="primary">Primary</Button>
