@@ -1,0 +1,53 @@
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Base line-height */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Anchor defaults */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Font smoothing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set font and base settings */
+body {
+  font-family: var(--font-family-sans, 'Inter', sans-serif);
+  font-size: var(--font-size-base, 16px);
+  background-color: var(--color-bg, #fff);
+  color: var(--color-text, #111);
+}
