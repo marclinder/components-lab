@@ -15,6 +15,10 @@ export function ButtonDemo() {
                     <Button variant="primary" action={() => window.alert('Click')}>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="ghost">Ghost</Button>
+                    <Button variant="ghost">
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                        Ghost
+                    </Button>
                 </div>
 
                 <h2>Disabled</h2>
@@ -29,6 +33,7 @@ export function ButtonDemo() {
                     <Button size="sm">Small</Button>
                     <Button size="md">Medium</Button>
                     <Button size="lg">Large</Button>
+                    <Button size="xl">Extra Large</Button>
                 </div>
             </section>
             <section className="demo">
@@ -39,7 +44,7 @@ export function ButtonDemo() {
 
                 <div className="demo-row">
                     <Button className="pt-space-4">With top padding</Button>
-                    <Button className="btn-bg-funky">Funky Button</Button>
+                    <Button size="sm" className="btn-bg-funky">Funky Button</Button>
                 </div>
             </section>
         </>

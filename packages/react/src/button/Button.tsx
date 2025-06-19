@@ -6,7 +6,7 @@ import styles from './Button.module.css';
  * Visual variants and sizes for Button
  */
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
-export type ButtonSize = 'lg' | 'md' | 'sm';
+export type ButtonSize = 'xl' | 'lg' | 'md' | 'sm';
 /**
  * Button component props
  */
