@@ -38,10 +38,14 @@ export function ButtonDemo() {
                 <div className="demo-row">
                     <Button variant="primary">
                         <img width="20" src="/svg/circle.svg" alt="Circle icon" />
-                        Button Icon
+                        Icon Button
                     </Button>
                     <Button variant="secondary">
-                        Button Icon
+                        Icon Button
+                        <img width="20" src="/svg/dot.svg" alt="Dot icon" />
+                    </Button>
+                    <Button variant="tertiary">
+                        Icon Button
                         <img width="20" src="/svg/dot.svg" alt="Dot icon" />
                     </Button>
                 </div>
