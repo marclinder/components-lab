@@ -9,12 +9,14 @@
   text-align: center;
   font-family: inherit;
   cursor: pointer;
-  font-weight: var(--font-weight-semibold);
+
+  gap: var(--space-8);
   border: var(--border-default);
   border-radius: var(--radius-lg);
   transition: var(--transition-bg);
   box-shadow: var(--shadow-button);
-  gap: var(--space-8);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--font-size-20);
 
   /* === Sizes === */
   &.sm {
@@ -25,6 +27,11 @@
   &.md {
     padding: var(--space-10) var(--space-16);
     font-size: var(--font-size-16);
+  }
+
+  &.lg,
+  &.xl {
+    line-height: var(--font-size-24);
   }
 
   &.lg {
@@ -99,6 +106,23 @@
     }
   }
 
+  &.iconOnly {
+    aspect-ratio: 1 / 1;
+    padding: 0;
+  }
+  &.sm.iconOnly {
+    padding: var(--space-4);
+  }
+  &.md.iconOnly {
+    padding: var(--space-8);
+  }
+  &.lg.iconOnly {
+    padding: var(--space-10);
+  }
+  &.xl.iconOnly {
+    padding: var(--space-12);
+  }
+
   /* === States === */
   &:focus-visible {
     outline: var(--space-4) solid var(--color-focus-ring);
@@ -109,16 +133,5 @@
   &.disabled {
     cursor: not-allowed;
     opacity: 0.7;
-  }
-
-  /* === Icon Only === */
-  &.iconOnly {
-    aspect-ratio: 1 / 1;
-    padding: 0;
-
-    &.sm { padding: var(--space-8); }
-    &.md { padding: var(--space-10); }
-    &.lg { padding: var(--space-12); }
-    &.xl { padding: var(--space-14); }
   }
 }

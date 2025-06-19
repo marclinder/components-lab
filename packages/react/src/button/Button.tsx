@@ -1,14 +1,13 @@
 import React from 'react';
 import { clsx } from 'clsx';
-import intentVariants from './styles/Button.module.css';
 import coreStyles from './styles/Button.module.css';
-
-const styles = { ...coreStyles, ...intentVariants };
+import intentVariants from './styles/Button.intents.module.css';
 
 /**
  * Visual variants and sizes for Button
  */
 export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'link';
+export type ButtonIntent = 'success' | 'warning' | 'error' | 'info';
 export type ButtonSize = 'xl' | 'lg' | 'md' | 'sm';
 
 /**
@@ -29,6 +28,8 @@ export type ButtonProps = {
   iconOnly?: boolean;
   /** Optional extra class names */
   className?: string;
+  /** Optional semantic intent to modify color (e.g. error, success) */
+  intent?: ButtonIntent;
 };
 
 /**
@@ -42,17 +43,19 @@ export const Button: React.FC<ButtonProps> = ({
   disabled = false,
   action,
   variant = 'primary',
-  size = 'md',
+  size = 'sm',
+  intent,
   iconOnly = false,
   className,
 }) => {
 
   const classNames = clsx(
-    styles.button,
-    styles[size],
-    styles[variant],
-    iconOnly && styles.iconOnly,
-    disabled && styles.disabled,
+    coreStyles.button,
+    coreStyles[size],
+    coreStyles[variant],
+    iconOnly && coreStyles.iconOnly,
+    disabled && coreStyles.disabled,
+    intent && intentVariants[intent],
     className
   );
 

@@ -16,7 +16,7 @@ export function ButtonDemo() {
                     <Button variant="primary" action={() => window.alert('Click')}>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="tertiary">Tertiary</Button>
-                    <Button variant="link">Link</Button>
+                    <Button variant="link" className='align-self-center'>Link</Button>
                 </div>
 
                 <h2>Disabled</h2>
@@ -24,7 +24,7 @@ export function ButtonDemo() {
                     <Button variant="primary" disabled>Primary</Button>
                     <Button variant="secondary" disabled>Secondary</Button>
                     <Button variant="tertiary" disabled>Tertiary</Button>
-                    <Button variant="link" disabled>Link</Button>
+                    <Button variant="link" disabled className='align-self-center'>Link</Button>
                 </div>
 
                 <h2>Sizes</h2>
@@ -43,11 +43,11 @@ export function ButtonDemo() {
                     </Button>
                     <Button variant="secondary">
                         Icon Button
-                        <Icon.Check size={20} color="#12B76A"/>
+                        <Icon.Check size={20} color="#12B76A" />
                     </Button>
                     <Button variant="tertiary">
                         Icon Button
-                        <Icon.Send size={20} style={{ color: 'var(--color-brand)' }}/>
+                        <Icon.Send size={20} style={{ color: 'var(--color-brand)' }} />
                     </Button>
                 </div>
 
@@ -68,6 +68,26 @@ export function ButtonDemo() {
                     <Button variant="primary" size='xl' iconOnly disabled>
                         <img width="20" src="/svg/circle.svg" alt="Circle icon" />
                     </Button>
+                </div>
+            </section>
+
+            <section className="demo">
+                <h2 className="title">Intent Variants</h2>
+                <p className="description">
+                    Use semantic intents to convey status or purpose more clearly. Combine intents with any button variant to reinforce meaning.
+                </p>
+                <div className="demo-row">
+                    <Button variant="primary" intent="success">Success</Button>
+                    <Button variant="secondary" intent="warning">Warning</Button>
+                    <Button variant="tertiary" intent="error">Error</Button>
+                    <Button variant="link" intent="info">Info</Button>
+                </div>
+                
+                <div className="demo-row">
+                    <Button variant="primary" intent="success" disabled>Success</Button>
+                    <Button variant="secondary" intent="warning" disabled>Warning</Button>
+                    <Button variant="tertiary" intent="error" disabled>Error</Button>
+                    <Button variant="link" intent="info" disabled>Info</Button>
                 </div>
             </section>
 
