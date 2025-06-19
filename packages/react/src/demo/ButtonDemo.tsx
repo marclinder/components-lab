@@ -19,6 +19,9 @@ export function ButtonDemo() {
                         <img width="20" src="/svg/circle.svg" alt="Circle icon" />
                         Button Icon
                     </Button>
+                    <Button variant="primary" size='sm'>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
                 </div>
 
                 <h2>Disabled</h2>
@@ -37,11 +40,10 @@ export function ButtonDemo() {
                 </div>
             </section>
             <section className="demo">
-                <h2 className="title">Custom ClassName Example</h2>
+                <h2 className="title">Custom Class Examples</h2>
                 <p className="description">
                     You can pass custom classes to adjust layout, spacing, or transitions as needed.
                 </p>
-
                 <div className="demo-row">
                     <Button className="pt-space-4">With top padding</Button>
                     <Button size="sm" className="btn-bg-funky">Funky Button</Button>
