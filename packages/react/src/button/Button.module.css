@@ -16,17 +16,17 @@
 /* Sizes */
 .sm {
   padding: var(--space-2) var(--space-3-5); /* 8px 16px */
-  font-size: var(--font-size-sm);             /* 14px */
+  font-size: var(--font-size-sm);           /* 14px */
 }
 
 .md {
   padding: var(--space-3) var(--space-5); /* 12px 20px */
-  font-size: var(--font-size-base);              /* 16px */
+  font-size: var(--font-size-base);       /* 16px */
 }
 
 .lg {
   padding: var(--space-4) var(--space-6); /* 16px 24px */
-  font-size: var(--font-size-md);              /* 18px */
+  font-size: var(--font-size-md);         /* 18px */
 }
 
 /* Variants */
@@ -43,7 +43,7 @@
 }
 
 .ghost {
-  background-color: transparent;
+  background-color: transparent !important;
   color: var(--color-brand);
   border-color: var(--color-brand);
 }

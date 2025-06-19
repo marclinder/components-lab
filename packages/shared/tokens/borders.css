@@ -1,0 +1,31 @@
+/**
+ * borders.css
+ *
+ * Border design tokens for width, radius, and style.
+ * These variables establish a consistent approach to borders across the UI.
+ *
+ * - Define default border width and style
+ * - Use semantic variables to enable consistent visual rhythm
+ * - Enables future theming (e.g., border styles per component type)
+ *
+ * Example usage:
+ *   .input {
+ *     border: var(--border-default);
+ *     border-radius: var(--border-radius-md);
+ *   }
+ *
+ * Consider mapping these tokens semantically (e.g., --border-input, --border-card)
+ * in a separate semantic-borders.css if needed.
+ */
+:root {
+  --border-width-default: 1px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+
+  --border-style-default: solid;
+  --border-color-transparent: transparent;
+
+  /* For convenience */
+  --border-default: var(--border-width-default) var(--border-style-default) var(--border-color-transparent);
+}

@@ -1,5 +1,5 @@
 import { Button } from '../button';
-import './_layout.css';
+import './_demo_layout.css';
 
 export function ButtonDemo() {
     return (
@@ -8,12 +8,11 @@ export function ButtonDemo() {
                 <h2 className="title">Button Variants</h2>
 
                 <p className="description">
-                    Use different button variants to express hierarchy and intent across your interface.
-  Primary buttons highlight key actions, secondary buttons offer alternatives, and ghost buttons provide minimal styling for low-emphasis actions.
+                    Use different button variants to express hierarchy and intent across your interface. Primary buttons highlight key actions, secondary buttons offer alternatives, and ghost buttons provide minimal styling for low-emphasis actions.
                 </p>
 
                 <div className="demo-row">
-                    <Button variant="primary">Primary</Button>
+                    <Button variant="primary" action={() => window.alert('Click')}>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="ghost">Ghost</Button>
                 </div>
