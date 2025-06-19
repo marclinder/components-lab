@@ -25,7 +25,7 @@ export type ButtonProps = {
   /** Whether the button is an icon-only button */
   iconOnly?: boolean;
   /** Optional extra class names */
-  customClassName?: string;
+  className?: string;
 };
 
 /**
@@ -41,7 +41,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
   iconOnly = false,
-  customClassName,
+  className,
 }) => {
 
   const classNames = clsx(
@@ -50,7 +50,7 @@ export const Button: React.FC<ButtonProps> = ({
     styles[variant],
     iconOnly && styles.iconOnly,
     disabled && styles.disabled,
-    customClassName
+    className
   );
 
   return (
