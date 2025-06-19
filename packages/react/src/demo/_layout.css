@@ -25,5 +25,30 @@
 }
 
 .btn-bg-funky {
-    background-color: green;
+  /* position: relative;
+  z-index: 1;
+  color: var(--color-text-inverse);
+  font-family: 'Comic Neue', cursive, sans-serif; /* Funky font fallback */
+
+  /* background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1L12.09 7.36H18.18L13.54 11.18L15.63 17.54L10 13.72L4.37 17.54L6.46 11.18L1.82 7.36H7.91L10 1Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  background-repeat: repeat;
+  background-blend-mode: hue;
+  background-color: green;
+  animation: starsScroll 10s linear infinite;
+
+  border: none;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm); */
+}
+
+@keyframes starsScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 80px -80px;
+  }
 }

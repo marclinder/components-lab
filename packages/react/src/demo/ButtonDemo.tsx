@@ -40,7 +40,7 @@ export function ButtonDemo() {
 
                 <div className="demo-row">
                     <Button className="pt-space-4">With top padding</Button>
-                    <Button className="btn-bg-funky">Funky Bg</Button>
+                    <Button className="btn-bg-funky">Funky Button</Button>
                 </div>
             </section>
         </>
