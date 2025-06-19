@@ -19,9 +19,6 @@ export function ButtonDemo() {
                         <img width="20" src="/svg/circle.svg" alt="Circle icon" />
                         Button Icon
                     </Button>
-                    <Button variant="primary" size='sm'>
-                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
-                    </Button>
                 </div>
 
                 <h2>Disabled</h2>
@@ -38,7 +35,27 @@ export function ButtonDemo() {
                     <Button size="lg">Large</Button>
                     <Button size="xl">Extra Large</Button>
                 </div>
+
+                <h2>Icon Only</h2>
+                <div className="demo-row">
+                    <Button variant="primary" size='sm' iconOnly>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
+                    <Button variant="primary" size='md' iconOnly>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
+                    <Button variant="primary" size='lg' iconOnly>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
+                    <Button variant="primary" size='xl' iconOnly>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
+                    <Button variant="primary" size='xl' iconOnly disabled>
+                        <img width="20" src="/svg/circle.svg" alt="Circle icon" />
+                    </Button>
+                </div>
             </section>
+            
             <section className="demo">
                 <h2 className="title">Custom Class Examples</h2>
                 <p className="description">

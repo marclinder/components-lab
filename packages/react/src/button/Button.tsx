@@ -7,6 +7,7 @@ import styles from './Button.module.css';
  */
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
 export type ButtonSize = 'xl' | 'lg' | 'md' | 'sm';
+
 /**
  * Button component props
  */
@@ -19,10 +20,12 @@ export type ButtonProps = {
   variant?: ButtonVariant;
   /** Visual size of the button (default: 'lg') */
   size?: ButtonSize;
-  /** Optional extra class names */
-  className?: string;
   /** Whether the button is disabled */
   disabled?: boolean;
+  /** Whether the button is an icon-only button */
+  iconOnly?: boolean;
+  /** Optional extra class names */
+  customClassName?: string;
 };
 
 /**
@@ -33,19 +36,21 @@ export type ButtonProps = {
  */
 export const Button: React.FC<ButtonProps> = ({
   children,
-  className,
   disabled = false,
   action,
   variant = 'primary',
   size = 'md',
+  iconOnly = false,
+  customClassName,
 }) => {
 
-  const defaultClassName = clsx(
+  const classNames = clsx(
     styles.button,
     styles[size],
     styles[variant],
+    iconOnly && styles.iconOnly,
     disabled && styles.disabled,
-    className
+    customClassName
   );
 
   return (
@@ -53,7 +58,7 @@ export const Button: React.FC<ButtonProps> = ({
       type="button"
       disabled={disabled}
       onClick={action}
-      className={defaultClassName}
+      className={classNames}
     >
       {children}
     </button>
