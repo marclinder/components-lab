@@ -21,9 +21,6 @@ export function ButtonDemo() {
           </Button>
           <Button variant="secondary">Secondary</Button>
           <Button variant="tertiary">Tertiary</Button>
-          <Button variant="link" className="align-self-center">
-            Link
-          </Button>
         </div>
 
         <h2>Disabled</h2>
@@ -36,9 +33,6 @@ export function ButtonDemo() {
           </Button>
           <Button variant="tertiary" disabled>
             Tertiary
-          </Button>
-          <Button variant="link" disabled className="align-self-center">
-            Link
           </Button>
         </div>
 
@@ -96,9 +90,6 @@ export function ButtonDemo() {
           <Button variant="primary" intent="success">
             Success
           </Button>
-          <Button variant="primary" intent="success">
-            Success
-          </Button>
           <Button variant="primary" intent="warning">
             Warning
           </Button>
@@ -138,9 +129,6 @@ export function ButtonDemo() {
           <Button variant="tertiary" intent="error" disabled>
             Error
           </Button>
-          <Button variant="link" intent="info" disabled>
-            Info
-          </Button>
         </div>
       </section>
 
@@ -152,7 +140,7 @@ export function ButtonDemo() {
         </p>
         <div className="demo-row">
           <Button className="btn-shadow-funky">Custom Button</Button>
-          <Button size="sm" className="btn-bg-funky">
+          <Button variant="secondary" size="sm" className="btn-bg-funky">
             Custom Button
           </Button>
         </div>

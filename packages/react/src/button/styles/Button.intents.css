@@ -69,17 +69,3 @@
   --color-text: var(--color-info);
   --color-border: var(--color-info);
 }
-
-/* === Link Variants === */
-.button.link.success {
-  --color-text: var(--color-success);
-}
-.button.link.warning {
-  --color-text: var(--color-warning);
-}
-.button.link.danger {
-  --color-text: var(--color-danger);
-}
-.button.link.info {
-  --color-text: var(--color-info);
-}
