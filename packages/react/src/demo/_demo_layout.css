@@ -1,6 +1,6 @@
 .title {
-  font-weight: 300;
   margin-bottom: var(--space-3);
+  font-weight: 300;
 }
 
 .demo {
@@ -11,10 +11,11 @@
 
 .demo-row {
   display: flex;
-  align-items: flex-start;
   gap: var(--space-12);
-  padding: var(--space-22);
+  align-items: flex-start;
+
   margin-bottom: var(--space-24);
+  padding: var(--space-22);
 }
 
 .description {
@@ -22,32 +23,35 @@
 }
 
 .btn-shadow-funky {
-  background-color: coral;
+  border-radius: 20px 0 12px;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+  background-color: coral;
   box-shadow:
     rgb(19 19 138 / 85%) 0 30px 60px -12px inset,
     rgb(255 0 0 / 90%) 0 18px 36px -18px inset;
-  border-radius: 20px 0 12px;
 }
 
 .btn-bg-funky {
-  font-family: "Comic Neue", cursive, sans-serif;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1L12.09 7.36H18.18L13.54 11.18L15.63 17.54L10 13.72L4.37 17.54L6.46 11.18L1.82 7.36H7.91L10 1Z' fill='%23000000' opacity='0.2' /%3E%3C/svg%3E");
-  background-size: 20px;
-  background-repeat: repeat;
-  animation: stars-scroll 6s linear infinite;
-  background-color: teal !important;
   border-radius: 40px;
+
+  font-family: "Comic Neue", cursive, sans-serif;
   font-size: var(--font-size-18) !important;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+
+  background-color: teal !important;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1L12.09 7.36H18.18L13.54 11.18L15.63 17.54L10 13.72L4.37 17.54L6.46 11.18L1.82 7.36H7.91L10 1Z' fill='%23000000' opacity='0.2' /%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 20px;
+
+  animation: stars-scroll 6s linear infinite;
 }
 
 @keyframes stars-scroll {

@@ -3,29 +3,32 @@
    ========================================================================= */
 
 /* Imports shared tokens and variants */
-@import "./Button.tokens.css";
-@import "./Button.variants.css";
-@import "./Button.intents.css";
+@import url("./Button.tokens.css");
+@import url("./Button.variants.css");
+@import url("./Button.intents.css");
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: inherit;
   cursor: pointer;
 
+  display: inline-flex;
   gap: var(--space-8);
+  align-items: center;
+  justify-content: center;
+
   border: var(--border-default);
+  border-color: var(--color-border);
   border-radius: var(--radius-lg);
-  transition: var(--transition-all);
-  box-shadow: var(--shadow-button);
+
+  font-family: inherit;
   font-weight: var(--font-weight-semibold);
   line-height: var(--font-size-20);
-
   color: var(--color-text);
+  text-align: center;
+
   background-color: var(--color-bg);
-  border-color: var(--color-border);
+  box-shadow: var(--shadow-button);
+
+  transition: var(--transition-all);
 }
 
 /* Sizes */
@@ -59,36 +62,43 @@
   aspect-ratio: 1 / 1;
   padding: 0;
 }
+
 .button.sm.icon-only {
   padding: var(--space-8);
 }
+
 .button.md.icon-only {
   padding: var(--space-10);
 }
+
 .button.lg.icon-only {
   padding: var(--space-12);
 }
+
 .button.xl.icon-only {
   padding: var(--space-14);
 }
 
 /* States */
-.button:hover:not(.disabled) {
-  background-color: var(--color-hover-bg);
-  border-color: var(--color-hover-border);
-  color: var(--color-hover-text);
-}
-
 .button:focus-visible {
   outline: var(--space-4) solid var(--color-focus-ring);
   outline-offset: var(--font-size-1);
   box-shadow: var(--shadow-lg);
 }
 
+.button:hover:not(.disabled) {
+  border-color: var(--color-hover-border);
+  color: var(--color-hover-text);
+  background-color: var(--color-hover-bg);
+}
+
 .button.disabled {
   cursor: not-allowed;
+
+  border-color: var(--color-disabled-border);
+
+  color: var(--color-disabled-text);
+
   opacity: 0.7;
   background-color: var(--color-disabled-bg);
-  color: var(--color-disabled-text);
-  border-color: var(--color-disabled-border);
 }
