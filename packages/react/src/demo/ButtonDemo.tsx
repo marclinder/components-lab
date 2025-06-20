@@ -1,6 +1,8 @@
 import { Button } from "../button";
 import "./_demo_layout.css";
 import * as Icon from "react-feather";
+const variants = ["primary", "secondary", "tertiary"] as const;
+const intents = ["default", "success", "warning", "error", "info"] as const;
 
 export function ButtonDemo() {
   return (
@@ -8,6 +10,7 @@ export function ButtonDemo() {
       <section className="demo">
         <h2 className="title">Button Variants</h2>
 
+        <h2>Default</h2>
         <p className="description">
           Use different button variants to express hierarchy and intent across
           your interface. Primary buttons highlight key actions, secondary
@@ -86,50 +89,25 @@ export function ButtonDemo() {
           Use semantic intents to convey status or purpose more clearly. Combine
           intents with any button variant to reinforce meaning.
         </p>
-        <div className="demo-row">
-          <Button variant="primary" intent="success">
-            Success
-          </Button>
-          <Button variant="primary" intent="warning">
-            Warning
-          </Button>
-          <Button variant="primary" intent="error">
-            Error
-          </Button>
-          <Button variant="primary" intent="info">
-            Info
-          </Button>
-        </div>
 
-        <div className="demo-row">
-          <Button variant="secondary" intent="success">
-            Success
-          </Button>
-          <Button variant="secondary" intent="success">
-            Success
-          </Button>
-          <Button variant="secondary" intent="warning">
-            Warning
-          </Button>
-          <Button variant="secondary" intent="error">
-            Error
-          </Button>
-          <Button variant="secondary" intent="info">
-            Info
-          </Button>
-        </div>
-
-        <div className="demo-row">
-          <Button variant="primary" intent="success" disabled>
-            Success
-          </Button>
-          <Button variant="secondary" intent="warning" disabled>
-            Warning
-          </Button>
-          <Button variant="tertiary" intent="error" disabled>
-            Error
-          </Button>
-        </div>
+        {variants.map((variant) => (
+          <div key={variant}>
+            <h3>{variant.charAt(0).toUpperCase() + variant.slice(1)}</h3>
+            <div className="demo-row">
+              {intents.map((intent) => (
+                <Button
+                  key={`${variant}-${intent}`}
+                  variant={variant}
+                  {...(intent !== "default" ? { intent } : {})}
+                >
+                  {intent === "default"
+                    ? "Default"
+                    : intent.charAt(0).toUpperCase() + intent.slice(1)}
+                </Button>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
 
       <section className="demo">
