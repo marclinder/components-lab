@@ -21,7 +21,7 @@ export type ButtonProps = {
   /** Visual variant of the button (default: 'primary') */
   variant?: ButtonVariant;
   /** Visual size of the button (default: 'lg') */
-  size?: ButtonSize;
+   size?: ButtonSize;
   /** Whether the button is disabled */
   disabled?: boolean;
   /** Whether the button is an icon-only button */
@@ -48,8 +48,9 @@ export const Button: React.FC<ButtonProps> = ({
   iconOnly = false,
   className,
 }) => {
+    const hello = 'world';
 
-  const classNames = clsx(
+    const classNames = clsx(
     coreStyles.button,
     coreStyles[size],
     coreStyles[variant],
