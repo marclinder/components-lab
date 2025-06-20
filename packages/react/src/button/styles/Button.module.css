@@ -2,28 +2,16 @@
    BUTTON MODULE — CSS NESTING VERSION
    Requires PostCSS or native browser support for nesting
 ========================================================================== */
-.button {
-  /* === Locally scoped tokens for Base styles === */
-  --color-bg: var(--color-brand);
-  --color-border: var(--color-brand);
-  --color-text: var(--color-text-inverse);
-  /* hover state */
-  --color-hover-bg: var(--color-brand-hover);
-  --color-hover-border: var(--color-brand-hover);
-  --color-hover-text: var(--color-text-inverse);
-  /* disabled state */
-  --color-disabled-bg: var(--color-brand-disabled);
-  --color-disabled-border: var(--color-brand-disabled);
-  --color-disabled-text: var(--color-text-inverse-disabled);
-}
+@import "./Button.tokens.css";
+@import "./Button.intents.css";
 
 .button {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: inherit;
+  align-items: center;
   cursor: pointer;
+  font-family: inherit;
 
   gap: var(--space-8);
   border: var(--border-default);
@@ -31,22 +19,25 @@
   transition: var(--transition-all);
   box-shadow: var(--shadow-button);
   font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
   line-height: var(--font-size-20);
 
   /* === Base styles === */
-  color: var(--color-text);
   background-color: var(--color-bg);
   border-color: var(--color-border);
 
   /* === Variants === */
+
+  /* no-op: uses default scoped tokens
   &.primary {
-    /* no-op: uses default scoped tokens */
-  }
+  } 
+  */
 
   &.secondary {
     --color-bg: var(--color-bg-subtle);
     --color-text: var(--color-text-secondary);
     --color-border: var(--color-border);
+
     /* disabled state */
     --color-disabled-bg: var(--color-bg-disabled);
     --color-disabled-text: var(--color-text-disabled);
@@ -57,6 +48,7 @@
     --color-bg: transparent;
     --color-text: var(--color-brand);
     --color-border: var(--color-brand);
+
     /* disabled state */
     --color-disabled-bg: transparent;
     --color-disabled-text: var(--color-brand-disabled);
@@ -67,10 +59,12 @@
     --color-bg: transparent;
     --color-border: transparent;
     --color-text: var(--color-brand);
+
     /* hover state */
     --color-hover-text: var(--color-text-secondary);
     --color-hover-bg: transparent;
     --color-hover-border: transparent;
+
     /* disabled state */
     --color-disabled-bg: transparent;
     --color-disabled-border: transparent;
@@ -113,34 +107,38 @@
   }
 
   /* === Icon-Only === */
-  &.iconOnly {
+  &.icon-only {
     aspect-ratio: 1 / 1;
     padding: 0;
   }
-  &.sm.iconOnly {
+
+  &.sm.icon-only {
     padding: var(--space-8);
   }
-  &.md.iconOnly {
+
+  &.md.icon-only {
     padding: var(--space-10);
   }
-  &.lg.iconOnly {
+
+  &.lg.icon-only {
     padding: var(--space-12);
   }
-  &.xl.iconOnly {
+
+  &.xl.icon-only {
     padding: var(--space-14);
   }
 
   /* === States === */
-  &:hover:not(.disabled) {
-    background-color: var(--color-hover-bg);
-    border-color: var(--color-hover-border);
-    color: var(--color-hover-text);
-  }
-
   &:focus-visible {
     outline: var(--space-4) solid var(--color-focus-ring);
     outline-offset: var(--font-size-1);
     box-shadow: var(--shadow-lg);
+  }
+
+  &:hover:not(.disabled) {
+    background-color: var(--color-hover-bg);
+    border-color: var(--color-hover-border);
+    color: var(--color-hover-text);
   }
 
   &.disabled {

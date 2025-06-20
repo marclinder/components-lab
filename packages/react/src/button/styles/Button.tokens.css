@@ -1,0 +1,23 @@
+/* ==========================================================================
+   BUTTON TOKENS MODULE
+   Locally scoped CSS variables for semantic styling
+   Applied via .button class and composed into base styles
+========================================================================== */
+
+/* === Base Colors === */
+.button {
+  /* === Default State === */
+  --color-bg: var(--color-brand); /* Default background */
+  --color-border: var(--color-brand); /* Default border */
+  --color-text: var(--color-text-inverse); /* Default text */
+
+  /* === Hover State === */
+  --color-hover-bg: var(--color-brand-hover); /* Hover background */
+  --color-hover-border: var(--color-brand-hover); /* Hover border */
+  --color-hover-text: var(--color-text-inverse); /* Hover text */
+
+  /* === Disabled State === */
+  --color-disabled-bg: var(--color-brand-disabled); /* Disabled background */
+  --color-disabled-border: var(--color-brand-disabled); /* Disabled border */
+  --color-disabled-text: var(--color-text-inverse-disabled); /* Disabled text */
+}

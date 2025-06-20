@@ -68,19 +68,19 @@ export function ButtonDemo() {
 
         <h2>Icon Only</h2>
         <div className="demo-row">
-          <Button variant="primary" size="sm" iconOnly>
+          <Button variant="primary" size="sm" icon-only>
             <Icon.Airplay size={20} />
           </Button>
-          <Button variant="primary" size="md" iconOnly>
+          <Button variant="primary" size="md" icon-only>
             <Icon.Anchor size={20} />
           </Button>
-          <Button variant="primary" size="lg" iconOnly>
+          <Button variant="primary" size="lg" icon-only>
             <Icon.Aperture size={20} />
           </Button>
-          <Button variant="primary" size="xl" iconOnly>
+          <Button variant="primary" size="xl" icon-only>
             <Icon.Archive size={20} />
           </Button>
-          <Button variant="primary" size="xl" iconOnly disabled>
+          <Button variant="primary" size="xl" icon-only disabled>
             <Icon.Award size={20} />
           </Button>
         </div>

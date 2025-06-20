@@ -1,7 +1,6 @@
 import React from "react";
 import { clsx } from "clsx";
-import coreStyles from "./styles/Button.module.css";
-import intentVariants from "./styles/Button.intents.module.css";
+import styles from "./styles/Button.module.css";
 
 /**
  * Visual variants and sizes for Button
@@ -48,15 +47,14 @@ export const Button: React.FC<ButtonProps> = ({
   iconOnly = false,
   className,
 }) => {
-  const hello = "world";
-
+  // Classnames for the button based on props
   const classNames = clsx(
-    coreStyles.button,
-    coreStyles[size],
-    coreStyles[variant],
-    iconOnly && coreStyles.iconOnly,
-    disabled && coreStyles.disabled,
-    intent && intentVariants[intent],
+    styles.button,
+    styles[size],
+    styles[variant],
+    iconOnly && styles["icon-only"],
+    disabled && styles.disabled,
+    intent && styles[intent],
     className,
   );
 
