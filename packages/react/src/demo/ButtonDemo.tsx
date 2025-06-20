@@ -78,16 +78,17 @@ export function ButtonDemo() {
                 </p>
                 <div className="demo-row">
                     <Button variant="primary" intent="success">Success</Button>
+                    <Button variant="secondary" intent="success">Success</Button>
                     <Button variant="secondary" intent="warning">Warning</Button>
                     <Button variant="tertiary" intent="error">Error</Button>
-                    <Button variant="link" intent="info" className='align-self-center'>Info</Button>
+                    <Button variant="link" intent="info">Info</Button>
                 </div>
 
                 <div className="demo-row">
                     <Button variant="primary" intent="success" disabled>Success</Button>
                     <Button variant="secondary" intent="warning" disabled>Warning</Button>
                     <Button variant="tertiary" intent="error" disabled>Error</Button>
-                    <Button variant="link" intent="info" disabled className='align-self-center'>Info</Button>
+                    <Button variant="link" intent="info" disabled>Info</Button>
                 </div>
             </section>
 
