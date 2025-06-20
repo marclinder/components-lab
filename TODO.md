@@ -1,5 +1,5 @@
-Accessibility & Styling Cleanup TODOs
--------------------------------------
+## Accessibility & Styling Cleanup TODOs
+
       [ ] Replace raw color values (e.g. --green-500) with semantic tokens (--color-success, etc.)
       [ ] Ensure consistent token naming and fallback structure across all variant × intent combinations
       [ ] Add :focus:not(:focus-visible) reset:
@@ -16,8 +16,8 @@ Accessibility & Styling Cleanup TODOs
             --color-active-text
       [ ] Temporarily mirror hover state for active state if distinct tokens don’t exist
 
-Tooling & DX Enhancements
---------------------------
+## Tooling & DX Enhancements
+
       [ ] Enable ESLint auto-fix on save in your editor
       [ ] Add Prettier with support for PostCSS nesting
       [ ] Validate .eslintrc, .prettierrc, and VSCode settings
@@ -28,20 +28,20 @@ Tooling & DX Enhancements
       [ ] Configure type-checking, test running, and bundling (Vite/Webpack/Rollup)
       [ ] Add `npm run build` and `npm run dev` scripts
 
-Storybook Setup
-----------------
+## Storybook Setup
+
       [ ] Install and configure Storybook
       [ ] Add stories for all variant × intent button combinations and states
       [ ] Integrate PostCSS nesting into Storybook config
       [ ] Add @storybook/addon-a11y for accessibility testing
 
-GitHub Pages / Static Docs
----------------------------
+## GitHub Pages / Static Docs
+
       [ ] Use Storybook's static build to generate docs (storybook-static)
       [ ] Add npm script to deploy to GitHub Pages (`npm run deploy-docs`)
       [ ] (Optional) Add GitHub Actions workflow for CI/CD deployment
 
-Next Component Set
--------------------
+## Next Component Set
+
       [ ] Choose and scaffold the next atomic components (Badge, Input, Tooltip, Toast, etc.)
       [ ] Reuse token strategy and variant × intent pattern in new components

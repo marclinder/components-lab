@@ -21,9 +21,9 @@ components-lab/
 
 ## Current Components
 
-| Package        | Status       | Description                                                  |
-|----------------|--------------|--------------------------------------------------------------|
-| react/dropdown | In Progress  | A fully accessible dropdown menu with keyboard navigation, click-away handling, and flexible styling |
+| Package        | Status      | Description                                                                                          |
+| -------------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| react/dropdown | In Progress | A fully accessible dropdown menu with keyboard navigation, click-away handling, and flexible styling |
 
 ## Getting Started
 

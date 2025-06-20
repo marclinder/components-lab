@@ -27,5 +27,6 @@
   --border-color-transparent: transparent;
 
   /* For convenience */
-  --border-default: var(--border-width-default) var(--border-style-default) var(--border-color-transparent);
+  --border-default: var(--border-width-default) var(--border-style-default)
+    var(--border-color-transparent);
 }

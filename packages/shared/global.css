@@ -46,7 +46,7 @@ html {
 
 /* Set font and base settings */
 body {
-  font-family: var(--font-family-sans, 'Inter', sans-serif);
+  font-family: var(--font-family-sans, "Inter", sans-serif);
   font-size: var(--font-size-base, 16px);
   background-color: var(--color-bg, #fff);
   color: var(--color-text, #111);

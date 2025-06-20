@@ -21,10 +21,12 @@
   --color-border: var(--gray-300);
 
   /* Brand / Primary */
-  --color-brand: var(--brand-600);           /* Used for buttons, links, active elements */
-  --color-brand-hover: var(--brand-700);     /* Hover state for primary actions */
-  --color-brand-disabled: var(--brand-300);  /* Disabled brand usage */
-  --color-on-brand: var(--white);            /* Text/icon color on brand background */
+  --color-brand: var(
+    --brand-600
+  ); /* Used for buttons, links, active elements */
+  --color-brand-hover: var(--brand-700); /* Hover state for primary actions */
+  --color-brand-disabled: var(--brand-300); /* Disabled brand usage */
+  --color-on-brand: var(--white); /* Text/icon color on brand background */
 
   /* Semantic status roles */
   --color-error: var(--red-600);

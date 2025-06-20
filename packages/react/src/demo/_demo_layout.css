@@ -1,35 +1,41 @@
 .title {
-    font-weight: 300;
-    margin-bottom: var(--space-3);
+  font-weight: 300;
+  margin-bottom: var(--space-3);
 }
 
 .demo {
-    margin: var(--space-12);
-    padding: var(--padding-card);
-    box-shadow: var(--shadow-sm);
+  margin: var(--space-12);
+  padding: var(--padding-card);
+  box-shadow: var(--shadow-sm);
 }
 
 .demo-row {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-12);
-    padding: var(--space-22);
-    margin-bottom: var(--space-24);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-12);
+  padding: var(--space-22);
+  margin-bottom: var(--space-24);
 }
 
 .description {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .btn-shadow-funky {
-    background-color: coral;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    box-shadow: rgba(19, 19, 138, 0.85) 0px 30px 60px -12px inset, rgba(255, 0, 0, 0.9) 0px 18px 36px -18px inset;
-    border-radius: 20px 0px 12px 0px;
+  background-color: coral;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  box-shadow:
+    rgba(19, 19, 138, 0.85) 0px 30px 60px -12px inset,
+    rgba(255, 0, 0, 0.9) 0px 18px 36px -18px inset;
+  border-radius: 20px 0px 12px 0px;
 }
 
 .btn-bg-funky {
-  font-family: 'Comic Neue', cursive, sans-serif; 
+  font-family: "Comic Neue", cursive, sans-serif;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 1L12.09 7.36H18.18L13.54 11.18L15.63 17.54L10 13.72L4.37 17.54L6.46 11.18L1.82 7.36H7.91L10 1Z' fill='%23000000' opacity='0.2' /%3E%3C/svg%3E");
   background-size: 20px;
   background-repeat: repeat;
@@ -37,7 +43,11 @@
   background-color: teal !important;
   border-radius: 40px;
   font-size: var(--font-size-18) !important;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 @keyframes starsScroll {

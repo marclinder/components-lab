@@ -8,81 +8,81 @@
  * in a separate file like semantic-colors.css.
  */
 :root {
-    /* Gray */
-    --gray-25: #FCFCFD;
-    --gray-50: #F9FAFB;
-    --gray-100: #F2F4F7;
-    --gray-200: #E4E7EC;
-    --gray-300: #D0D5DD;
-    --gray-400: #98A2B3;
-    --gray-500: #667085;
-    --gray-600: #475467;
-    --gray-700: #344054;
-    --gray-800: #1D2939;
-    --gray-900: #101828;
+  /* Gray */
+  --gray-25: #fcfcfd;
+  --gray-50: #f9fafb;
+  --gray-100: #f2f4f7;
+  --gray-200: #e4e7ec;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --gray-800: #1d2939;
+  --gray-900: #101828;
 
-    /* Brand (Primary) */
-    --brand-25: #FCFAFF;
-    --brand-50: #F9F5FF;
-    --brand-100: #F4EBFF;
-    --brand-200: #E9D7FE;
-    --brand-300: #D6BBFB;
-    --brand-400: #B692F6;
-    --brand-500: #9E77ED;
-    --brand-600: #7F56D9;
-    --brand-700: #6941C6;
-    --brand-800: #53389E;
-    --brand-900: #42307D;
+  /* Brand (Primary) */
+  --brand-25: #fcfaff;
+  --brand-50: #f9f5ff;
+  --brand-100: #f4ebff;
+  --brand-200: #e9d7fe;
+  --brand-300: #d6bbfb;
+  --brand-400: #b692f6;
+  --brand-500: #9e77ed;
+  --brand-600: #7f56d9;
+  --brand-700: #6941c6;
+  --brand-800: #53389e;
+  --brand-900: #42307d;
 
-    /* Red (Error) */
-    --red-25: #FFFBFA;
-    --red-50: #FEF3F2;
-    --red-100: #FEE4E2;
-    --red-200: #FECDCA;
-    --red-300: #FDA29B;
-    --red-400: #F97066;
-    --red-500: #F04438;
-    --red-600: #D92D20;
-    --red-700: #B42318;
-    --red-800: #912018;
-    --red-900: #7A271A;
+  /* Red (Error) */
+  --red-25: #fffbfa;
+  --red-50: #fef3f2;
+  --red-100: #fee4e2;
+  --red-200: #fecdca;
+  --red-300: #fda29b;
+  --red-400: #f97066;
+  --red-500: #f04438;
+  --red-600: #d92d20;
+  --red-700: #b42318;
+  --red-800: #912018;
+  --red-900: #7a271a;
 
-    /* Green (Success) */
-    --green-25: #F6FEF9;
-    --green-50: #ECFDF3;
-    --green-100: #D1FADF;
-    --green-200: #A6F4C5;
-    --green-300: #6CE9A6;
-    --green-400: #32D583;
-    --green-500: #12B76A;
-    --green-600: #039855;
-    --green-700: #027A48;
-    --green-800: #05603A;
-    --green-900: #054F31;
+  /* Green (Success) */
+  --green-25: #f6fef9;
+  --green-50: #ecfdf3;
+  --green-100: #d1fadf;
+  --green-200: #a6f4c5;
+  --green-300: #6ce9a6;
+  --green-400: #32d583;
+  --green-500: #12b76a;
+  --green-600: #039855;
+  --green-700: #027a48;
+  --green-800: #05603a;
+  --green-900: #054f31;
 
-    /* Yellow (Warning) */
-    --yellow-25: #FFFCF5;
-    --yellow-50: #FFFAEB;
-    --yellow-100: #FEF0C7;
-    --yellow-200: #FEDF89;
-    --yellow-300: #FEC84B;
-    --yellow-400: #FDB022;
-    --yellow-500: #F79009;
-    --yellow-600: #DC6803;
-    --yellow-700: #B54708;
-    --yellow-800: #93370D;
-    --yellow-900: #7A2E0E;
+  /* Yellow (Warning) */
+  --yellow-25: #fffcf5;
+  --yellow-50: #fffaeb;
+  --yellow-100: #fef0c7;
+  --yellow-200: #fedf89;
+  --yellow-300: #fec84b;
+  --yellow-400: #fdb022;
+  --yellow-500: #f79009;
+  --yellow-600: #dc6803;
+  --yellow-700: #b54708;
+  --yellow-800: #93370d;
+  --yellow-900: #7a2e0e;
 
-    /* Blue */
-    --blue-25: #F5FAFF;
-    --blue-50: #EFF8FF;
-    --blue-100: #D1E9FF;
-    --blue-200: #B2DDFF;
-    --blue-300: #84CAFF;
-    --blue-400: #53B1FD;
-    --blue-500: #2E90FA;
-    --blue-600: #1570EF;
-    --blue-700: #175CD3;
-    --blue-800: #1849A9;
-    --blue-900: #194185;
+  /* Blue */
+  --blue-25: #f5faff;
+  --blue-50: #eff8ff;
+  --blue-100: #d1e9ff;
+  --blue-200: #b2ddff;
+  --blue-300: #84caff;
+  --blue-400: #53b1fd;
+  --blue-500: #2e90fa;
+  --blue-600: #1570ef;
+  --blue-700: #175cd3;
+  --blue-800: #1849a9;
+  --blue-900: #194185;
 }

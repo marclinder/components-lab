@@ -1,4 +1,4 @@
-import { ButtonDemo } from './demo/ButtonDemo';
+import { ButtonDemo } from "./demo/ButtonDemo";
 
 export default function App() {
   return (

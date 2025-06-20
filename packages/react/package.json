@@ -10,7 +10,8 @@
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:ts": "eslint . --ext .ts,.tsx",
     "lint:css": "stylelint \"**/*.{css,scss}\"",
-    "lint:fix": "npm run lint:ts -- --fix && npm run lint:css -- --fix"
+    "lint:fix": "npm run lint:ts -- --fix && npm run lint:css -- --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "clsx": "^2.1.1",

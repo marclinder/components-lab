@@ -1,14 +1,14 @@
-import React from 'react';
-import { clsx } from 'clsx';
-import coreStyles from './styles/Button.module.css';
-import intentVariants from './styles/Button.intents.module.css';
+import React from "react";
+import { clsx } from "clsx";
+import coreStyles from "./styles/Button.module.css";
+import intentVariants from "./styles/Button.intents.module.css";
 
 /**
  * Visual variants and sizes for Button
  */
-export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'link';
-export type ButtonIntent = 'success' | 'warning' | 'error' | 'info';
-export type ButtonSize = 'xl' | 'lg' | 'md' | 'sm';
+export type ButtonVariant = "primary" | "secondary" | "tertiary" | "link";
+export type ButtonIntent = "success" | "warning" | "error" | "info";
+export type ButtonSize = "xl" | "lg" | "md" | "sm";
 
 /**
  * Button component props
@@ -21,7 +21,7 @@ export type ButtonProps = {
   /** Visual variant of the button (default: 'primary') */
   variant?: ButtonVariant;
   /** Visual size of the button (default: 'lg') */
-   size?: ButtonSize;
+  size?: ButtonSize;
   /** Whether the button is disabled */
   disabled?: boolean;
   /** Whether the button is an icon-only button */
@@ -42,22 +42,22 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   disabled = false,
   action,
-  variant = 'primary',
-  size = 'sm',
+  variant = "primary",
+  size = "sm",
   intent,
   iconOnly = false,
   className,
 }) => {
-    const hello = 'world';
+  const hello = "world";
 
-    const classNames = clsx(
+  const classNames = clsx(
     coreStyles.button,
     coreStyles[size],
     coreStyles[variant],
     iconOnly && coreStyles.iconOnly,
     disabled && coreStyles.disabled,
     intent && intentVariants[intent],
-    className
+    className,
   );
 
   return (
