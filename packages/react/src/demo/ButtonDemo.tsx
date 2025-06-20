@@ -96,16 +96,34 @@ export function ButtonDemo() {
           <Button variant="primary" intent="success">
             Success
           </Button>
+          <Button variant="primary" intent="success">
+            Success
+          </Button>
+          <Button variant="primary" intent="warning">
+            Warning
+          </Button>
+          <Button variant="primary" intent="error">
+            Error
+          </Button>
+          <Button variant="primary" intent="info">
+            Info
+          </Button>
+        </div>
+
+        <div className="demo-row">
+          <Button variant="secondary" intent="success">
+            Success
+          </Button>
           <Button variant="secondary" intent="success">
             Success
           </Button>
           <Button variant="secondary" intent="warning">
             Warning
           </Button>
-          <Button variant="tertiary" intent="error">
+          <Button variant="secondary" intent="error">
             Error
           </Button>
-          <Button variant="link" intent="info">
+          <Button variant="secondary" intent="info">
             Info
           </Button>
         </div>

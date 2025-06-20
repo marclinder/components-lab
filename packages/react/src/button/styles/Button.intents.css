@@ -1,247 +1,85 @@
 /* ==========================================================================
-   INTENTS
-   Semantic variants to convey message tone or importance.
+   BUTTON MODULE — INTENT STYLES
+   These classes override semantic tokens to convey status or meaning
+   Applied as `.button.success`, `.button.danger`, etc.
+
+   VARIANT × INTENT — Combination Overrides
+   This layer defines scoped token overrides for all supported combinations.
+   Each block customizes variant behavior based on intent context.
 ========================================================================== */
-.success {
-   --color-bg: var(--green-500);
-  --color-border: var(--green-500);
-  --color-text: var(--green-25);
-  --color-hover-bg: var(--green-700);
-  --color-hover-border: var(--green-700);
-  --color-hover-text: var(--green-50);
-  --color-disabled-bg: var(--green-200);
-  --color-disabled-border: var(--green-200);
-  --color-disabled-text: var(--green-600);
-}
 
-.error {
-  --color-bg: var(--red-500);
-  --color-border: var(--red-500);
-  --color-text: var(--red-25);
-  --color-hover-bg: var(--red-700);
-  --color-hover-border: var(--red-700);
-  --color-hover-text: var(--red-50);
-  --color-disabled-bg: var(--red-200);
-  --color-disabled-border: var(--red-200);
-  --color-disabled-text: var(--red-600);
-}
-
-.warning {
-  --color-bg: var(--yellow-500);
-  --color-border: var(--yellow-500);
-  --color-text: var(--yellow-25);
-  --color-hover-bg: var(--yellow-700);
-  --color-hover-border: var(--yellow-700);
-  --color-hover-text: var(--yellow-50);
-  --color-disabled-bg: var(--yellow-200);
-  --color-disabled-border: var(--yellow-200);
-  --color-disabled-text: var(--yellow-600);
-}
-
-.info {
-  --color-bg: var(--blue-500);
-  --color-border: var(--blue-500);
-  --color-text: var(--blue-25);
-  --color-hover-bg: var(--blue-700);
-  --color-hover-border: var(--blue-700);
-  --color-hover-text: var(--blue-50);
-  --color-disabled-bg: var(--blue-200);
-  --color-disabled-border: var(--blue-200);
-  --color-disabled-text: var(--blue-600);
-}
-
-/* ==========================================================================
-   Generated Button Variant × Intent Classes
-   ========================================================================== */
-
+/* === Primary Variants === */
 .button.primary.success {
-  --color-bg: var(--green-500);
-  --color-border: var(--green-500);
-  --color-text: var(--green-500);
-  --color-hover-bg: var(--color-success-hover);
-  --color-hover-border: var(--color-success-hover);
-  --color-hover-text: var(--color-on-success);
-  --color-disabled-bg: var(--color-success-disabled);
-  --color-disabled-border: var(--color-success-disabled);
-  --color-disabled-text: var(--color-on-success-disabled);
+  --color-bg: var(--color-success);
+  --color-text: var(--color-text-inverse);
+  --color-border: var(--color-success);
 }
-
 .button.primary.warning {
   --color-bg: var(--color-warning);
+  --color-text: var(--color-text-inverse);
   --color-border: var(--color-warning);
-  --color-text: var(--color-on-warning);
-  --color-hover-bg: var(--color-warning-hover);
-  --color-hover-border: var(--color-warning-hover);
-  --color-hover-text: var(--color-on-warning);
-  --color-disabled-bg: var(--color-warning-disabled);
-  --color-disabled-border: var(--color-warning-disabled);
-  --color-disabled-text: var(--color-on-warning-disabled);
 }
-
-.button.primary.error {
-  --color-bg: var(--color-error);
-  --color-border: var(--color-error);
-  --color-text: var(--color-on-error);
-  --color-hover-bg: var(--color-error-hover);
-  --color-hover-border: var(--color-error-hover);
-  --color-hover-text: var(--color-on-error);
-  --color-disabled-bg: var(--color-error-disabled);
-  --color-disabled-border: var(--color-error-disabled);
-  --color-disabled-text: var(--color-on-error-disabled);
+.button.primary.danger {
+  --color-bg: var(--color-danger);
+  --color-text: var(--color-text-inverse);
+  --color-border: var(--color-danger);
 }
-
 .button.primary.info {
   --color-bg: var(--color-info);
+  --color-text: var(--color-text-inverse);
   --color-border: var(--color-info);
-  --color-text: var(--color-on-info);
-  --color-hover-bg: var(--color-info-hover);
-  --color-hover-border: var(--color-info-hover);
-  --color-hover-text: var(--color-on-info);
-  --color-disabled-bg: var(--color-info-disabled);
-  --color-disabled-border: var(--color-info-disabled);
-  --color-disabled-text: var(--color-on-info-disabled);
 }
 
+/* === Secondary Variants === */
 .button.secondary.success {
-  --color-bg: var(--green-200);
-  --color-border: var(--green-300);
-  --color-text: var(--green-400);
-  --color-hover-bg: var(--color-success-hover);
-  --color-hover-border: var(--color-success-hover);
-  --color-hover-text: var(--color-on-success);
-  --color-disabled-bg: var(--color-success-disabled-bg);
-  --color-disabled-border: var(--color-success-disabled);
-  --color-disabled-text: var(--color-success-disabled-text);
+  --color-bg: var(--color-success-subtle);
+  --color-text: var(--color-success);
+  --color-border: var(--color-success);
 }
-
 .button.secondary.warning {
   --color-bg: var(--color-warning-subtle);
-  --color-border: var(--color-warning);
   --color-text: var(--color-warning);
-  --color-hover-bg: var(--color-warning-hover);
-  --color-hover-border: var(--color-warning-hover);
-  --color-hover-text: var(--color-on-warning);
-  --color-disabled-bg: var(--color-warning-disabled-bg);
-  --color-disabled-border: var(--color-warning-disabled);
-  --color-disabled-text: var(--color-warning-disabled-text);
+  --color-border: var(--color-warning);
 }
-
-.button.secondary.error {
-  --color-bg: var(--color-error-subtle);
-  --color-border: var(--color-error);
-  --color-text: var(--color-error);
-  --color-hover-bg: var(--color-error-hover);
-  --color-hover-border: var(--color-error-hover);
-  --color-hover-text: var(--color-on-error);
-  --color-disabled-bg: var(--color-error-disabled-bg);
-  --color-disabled-border: var(--color-error-disabled);
-  --color-disabled-text: var(--color-error-disabled-text);
+.button.secondary.danger {
+  --color-bg: var(--color-danger-subtle);
+  --color-text: var(--color-danger);
+  --color-border: var(--color-danger);
 }
-
 .button.secondary.info {
   --color-bg: var(--color-info-subtle);
-  --color-border: var(--color-info);
   --color-text: var(--color-info);
-  --color-hover-bg: var(--color-info-hover);
-  --color-hover-border: var(--color-info-hover);
-  --color-hover-text: var(--color-on-info);
-  --color-disabled-bg: var(--color-info-disabled-bg);
-  --color-disabled-border: var(--color-info-disabled);
-  --color-disabled-text: var(--color-info-disabled-text);
+  --color-border: var(--color-info);
 }
 
+/* === Tertiary Variants === */
 .button.tertiary.success {
-  --color-bg: transparent;
+  --color-text: var(--color-success);
   --color-border: var(--color-success);
-  --color-text: var(--color-success);
-  --color-hover-bg: transparent;
-  --color-hover-border: var(--color-success-hover);
-  --color-hover-text: var(--color-success-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: var(--color-success-disabled);
-  --color-disabled-text: var(--color-success-disabled);
 }
-
 .button.tertiary.warning {
-  --color-bg: transparent;
+  --color-text: var(--color-warning);
   --color-border: var(--color-warning);
-  --color-text: var(--color-warning);
-  --color-hover-bg: transparent;
-  --color-hover-border: var(--color-warning-hover);
-  --color-hover-text: var(--color-warning-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: var(--color-warning-disabled);
-  --color-disabled-text: var(--color-warning-disabled);
 }
-
-.button.tertiary.error {
-  --color-bg: transparent;
-  --color-border: var(--color-error);
-  --color-text: var(--color-error);
-  --color-hover-bg: transparent;
-  --color-hover-border: var(--color-error-hover);
-  --color-hover-text: var(--color-error-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: var(--color-error-disabled);
-  --color-disabled-text: var(--color-error-disabled);
+.button.tertiary.danger {
+  --color-text: var(--color-danger);
+  --color-border: var(--color-danger);
 }
-
 .button.tertiary.info {
-  --color-bg: transparent;
+  --color-text: var(--color-info);
   --color-border: var(--color-info);
-  --color-text: var(--color-info);
-  --color-hover-bg: transparent;
-  --color-hover-border: var(--color-info-hover);
-  --color-hover-text: var(--color-info-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: var(--color-info-disabled);
-  --color-disabled-text: var(--color-info-disabled);
 }
 
+/* === Link Variants === */
 .button.link.success {
-  --color-bg: transparent;
-  --color-border: transparent;
   --color-text: var(--color-success);
-  --color-hover-bg: transparent;
-  --color-hover-border: transparent;
-  --color-hover-text: var(--color-success-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: transparent;
-  --color-disabled-text: var(--color-success-disabled);
 }
-
 .button.link.warning {
-  --color-bg: transparent;
-  --color-border: transparent;
   --color-text: var(--color-warning);
-  --color-hover-bg: transparent;
-  --color-hover-border: transparent;
-  --color-hover-text: var(--color-warning-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: transparent;
-  --color-disabled-text: var(--color-warning-disabled);
 }
-
-.button.link.error {
-  --color-bg: transparent;
-  --color-border: transparent;
-  --color-text: var(--color-error);
-  --color-hover-bg: transparent;
-  --color-hover-border: transparent;
-  --color-hover-text: var(--color-error-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: transparent;
-  --color-disabled-text: var(--color-error-disabled);
+.button.link.danger {
+  --color-text: var(--color-danger);
 }
-
 .button.link.info {
-  --color-bg: transparent;
-  --color-border: transparent;
   --color-text: var(--color-info);
-  --color-hover-bg: transparent;
-  --color-hover-border: transparent;
-  --color-hover-text: var(--color-info-hover);
-  --color-disabled-bg: transparent;
-  --color-disabled-border: transparent;
-  --color-disabled-text: var(--color-info-disabled);
 }

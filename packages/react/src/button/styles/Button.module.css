@@ -1,17 +1,19 @@
 /* ==========================================================================
-   BUTTON MODULE — CSS NESTING VERSION
-   Requires PostCSS or native browser support for nesting
-========================================================================== */
+   BUTTON MODULE — Base layout, shared styles
+   ========================================================================= */
+
+/* Imports shared tokens and variants */
 @import "./Button.tokens.css";
+@import "./Button.variants.css";
 @import "./Button.intents.css";
 
 .button {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  cursor: pointer;
   font-family: inherit;
+  cursor: pointer;
 
   gap: var(--space-8);
   border: var(--border-default);
@@ -19,133 +21,74 @@
   transition: var(--transition-all);
   box-shadow: var(--shadow-button);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
   line-height: var(--font-size-20);
 
-  /* === Base styles === */
+  color: var(--color-text);
   background-color: var(--color-bg);
   border-color: var(--color-border);
+}
 
-  /* === Variants === */
+/* Sizes */
+.button.sm {
+  padding: var(--space-8) var(--space-14);
+  font-size: var(--font-size-14);
+}
 
-  /* no-op: uses default scoped tokens
-  &.primary {
-  } 
-  */
+.button.md {
+  padding: var(--space-10) var(--space-16);
+  font-size: var(--font-size-16);
+}
 
-  &.secondary {
-    --color-bg: var(--color-bg-subtle);
-    --color-text: var(--color-text-secondary);
-    --color-border: var(--color-border);
+.button.lg,
+.button.xl {
+  line-height: var(--font-size-24);
+}
 
-    /* disabled state */
-    --color-disabled-bg: var(--color-bg-disabled);
-    --color-disabled-text: var(--color-text-disabled);
-    --color-disabled-border: var(--color-border-disabled);
-  }
+.button.lg {
+  padding: var(--space-10) var(--space-18);
+  font-size: var(--font-size-16);
+}
 
-  &.tertiary {
-    --color-bg: transparent;
-    --color-text: var(--color-brand);
-    --color-border: var(--color-brand);
+.button.xl {
+  padding: var(--space-12) var(--space-20);
+  font-size: var(--font-size-16);
+}
 
-    /* disabled state */
-    --color-disabled-bg: transparent;
-    --color-disabled-text: var(--color-brand-disabled);
-    --color-disabled-border: var(--color-brand-disabled);
-  }
+/* Icon-only */
+.button.icon-only {
+  aspect-ratio: 1 / 1;
+  padding: 0;
+}
+.button.sm.icon-only {
+  padding: var(--space-8);
+}
+.button.md.icon-only {
+  padding: var(--space-10);
+}
+.button.lg.icon-only {
+  padding: var(--space-12);
+}
+.button.xl.icon-only {
+  padding: var(--space-14);
+}
 
-  &.link {
-    --color-bg: transparent;
-    --color-border: transparent;
-    --color-text: var(--color-brand);
+/* States */
+.button:hover:not(.disabled) {
+  background-color: var(--color-hover-bg);
+  border-color: var(--color-hover-border);
+  color: var(--color-hover-text);
+}
 
-    /* hover state */
-    --color-hover-text: var(--color-text-secondary);
-    --color-hover-bg: transparent;
-    --color-hover-border: transparent;
+.button:focus-visible {
+  outline: var(--space-4) solid var(--color-focus-ring);
+  outline-offset: var(--font-size-1);
+  box-shadow: var(--shadow-lg);
+}
 
-    /* disabled state */
-    --color-disabled-bg: transparent;
-    --color-disabled-border: transparent;
-    --color-disabled-text: var(--color-brand-disabled);
-
-    padding: 0;
-    border-radius: var(--space-4);
-    outline-offset: var(--space-4);
-    box-shadow: none;
-
-    &:hover:not(.disabled) {
-      text-decoration: underline;
-    }
-  }
-
-  /* === Sizes === */
-  &.sm {
-    padding: var(--space-8) var(--space-14);
-    font-size: var(--font-size-14);
-  }
-
-  &.md {
-    padding: var(--space-10) var(--space-16);
-    font-size: var(--font-size-16);
-  }
-
-  &.lg,
-  &.xl {
-    line-height: var(--font-size-24);
-  }
-
-  &.lg {
-    padding: var(--space-10) var(--space-18);
-    font-size: var(--font-size-16);
-  }
-
-  &.xl {
-    padding: var(--space-12) var(--space-20);
-    font-size: var(--font-size-16);
-  }
-
-  /* === Icon-Only === */
-  &.icon-only {
-    aspect-ratio: 1 / 1;
-    padding: 0;
-  }
-
-  &.sm.icon-only {
-    padding: var(--space-8);
-  }
-
-  &.md.icon-only {
-    padding: var(--space-10);
-  }
-
-  &.lg.icon-only {
-    padding: var(--space-12);
-  }
-
-  &.xl.icon-only {
-    padding: var(--space-14);
-  }
-
-  /* === States === */
-  &:focus-visible {
-    outline: var(--space-4) solid var(--color-focus-ring);
-    outline-offset: var(--font-size-1);
-    box-shadow: var(--shadow-lg);
-  }
-
-  &:hover:not(.disabled) {
-    background-color: var(--color-hover-bg);
-    border-color: var(--color-hover-border);
-    color: var(--color-hover-text);
-  }
-
-  &.disabled {
-    cursor: not-allowed;
-    opacity: 0.7;
-    background-color: var(--color-disabled-bg);
-    color: var(--color-disabled-text);
-    border-color: var(--color-disabled-border);
-  }
+.button.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background-color: var(--color-disabled-bg);
+  color: var(--color-disabled-text);
+  border-color: var(--color-disabled-border);
 }
