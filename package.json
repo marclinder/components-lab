@@ -8,8 +8,12 @@
     "examples/*"
   ],
   "scripts": {
+    "tokens:build": "style-dictionary build --config style-dictionary.config.js",
     "build": "echo 'Add build script per package'",
     "dev": "echo 'Use package-specific dev scripts'"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "style-dictionary": "^5.0.0"
+  }
 }

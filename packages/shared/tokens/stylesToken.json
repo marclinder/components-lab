@@ -1,0 +1,956 @@
+{
+  "color": {
+    "White": {
+      "value": "rgba(255,255,255,1)",
+      "comment": ""
+    },
+    "Black": {
+      "value": "rgba(0,0,0,1)",
+      "comment": ""
+    },
+    "Gray": {
+      "25": {
+        "value": "rgba(253,253,253,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(250,250,250,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(245,245,245,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(233,234,235,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(213,215,218,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(164,167,174,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(113,118,128,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(83,88,98,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(65,70,81,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(37,43,55,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(24,29,39,1)",
+        "comment": ""
+      }
+    },
+    "Brand": {
+      "25": {
+        "value": "rgba(252,250,255,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(249,245,255,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(244,235,255,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(233,215,254,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(214,187,251,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(182,146,246,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(158,119,237,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(127,86,217,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(105,65,198,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(83,56,158,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(66,48,125,1)",
+        "comment": ""
+      }
+    },
+    "Error": {
+      "25": {
+        "value": "rgba(255,251,250,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(254,243,242,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(254,228,226,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(254,205,202,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(253,162,155,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(249,112,102,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(240,68,56,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(217,45,32,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(180,35,24,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(145,32,24,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(122,39,26,1)",
+        "comment": ""
+      }
+    },
+    "Warning": {
+      "25": {
+        "value": "rgba(255,252,245,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(255,250,235,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(254,240,199,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(254,223,137,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(254,200,75,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(253,176,34,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(247,144,9,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(220,104,3,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(181,71,8,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(147,55,13,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(122,46,14,1)",
+        "comment": ""
+      }
+    },
+    "Success": {
+      "25": {
+        "value": "rgba(246,254,249,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(236,253,243,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(209,250,223,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(166,244,197,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(108,233,166,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(50,213,131,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(18,183,106,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(3,152,85,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(2,122,72,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(5,96,58,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(5,79,49,1)",
+        "comment": ""
+      }
+    },
+    "Blue gray": {
+      "25": {
+        "value": "rgba(252,252,253,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(248,249,252,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(234,236,245,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(213,217,235,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(175,181,217,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(113,123,188,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(78,91,166,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(62,71,132,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(54,63,114,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(41,48,86,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(16,19,35,1)",
+        "comment": ""
+      }
+    },
+    "Blue light": {
+      "25": {
+        "value": "rgba(245,251,255,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(240,249,255,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(224,242,254,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(185,230,254,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(124,212,253,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(54,191,250,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(11,165,236,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(0,134,201,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(2,106,162,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(6,89,134,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(11,74,111,1)",
+        "comment": ""
+      }
+    },
+    "Blue": {
+      "25": {
+        "value": "rgba(245,250,255,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(239,248,255,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(209,233,255,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(178,221,255,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(132,202,255,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(83,177,253,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(46,144,250,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(21,112,239,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(23,92,211,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(24,73,169,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(25,65,133,1)",
+        "comment": ""
+      }
+    },
+    "Indigo": {
+      "25": {
+        "value": "rgba(245,248,255,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(238,244,255,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(224,234,255,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(199,215,254,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(164,188,253,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(128,152,249,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(97,114,243,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(68,76,231,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(53,56,205,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(45,49,166,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(45,50,130,1)",
+        "comment": ""
+      }
+    },
+    "Purple": {
+      "25": {
+        "value": "rgba(250,250,255,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(244,243,255,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(235,233,254,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(217,214,254,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(189,180,254,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(155,138,251,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(122,90,248,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(105,56,239,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(89,37,220,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(74,31,184,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(62,28,150,1)",
+        "comment": ""
+      }
+    },
+    "Pink": {
+      "25": {
+        "value": "rgba(254,246,251,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(253,242,250,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(252,231,246,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(252,206,238,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(250,167,224,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(246,112,199,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(238,70,188,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(221,37,144,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(193,21,116,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(158,22,95,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(133,22,81,1)",
+        "comment": ""
+      }
+    },
+    "Rosé": {
+      "25": {
+        "value": "rgba(255,245,246,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(255,241,243,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(255,228,232,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(254,205,214,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(254,163,180,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(253,111,142,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(246,61,104,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(227,27,84,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(192,16,72,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(161,16,67,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(137,18,62,1)",
+        "comment": ""
+      }
+    },
+    "Orange": {
+      "25": {
+        "value": "rgba(255,250,245,1)",
+        "comment": ""
+      },
+      "50": {
+        "value": "rgba(255,246,237,1)",
+        "comment": ""
+      },
+      "100": {
+        "value": "rgba(255,234,213,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(253,220,171,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(254,178,115,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(253,133,58,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(251,101,20,1)",
+        "comment": ""
+      },
+      "600": {
+        "value": "rgba(236,74,10,1)",
+        "comment": ""
+      },
+      "700": {
+        "value": "rgba(196,50,10,1)",
+        "comment": ""
+      },
+      "800": {
+        "value": "rgba(156,42,16,1)",
+        "comment": ""
+      },
+      "900": {
+        "value": "rgba(126,36,16,1)",
+        "comment": ""
+      }
+    },
+    "Avatar user square": {
+      "Olivia Rhye (color background)": {
+        "value": "rgba(199,185,218,1)",
+        "comment": ""
+      },
+      "Phoenix Baker (color background)": {
+        "value": "rgba(170,156,117,1)",
+        "comment": ""
+      },
+      "Lana Steiner (color background)": {
+        "value": "rgba(212,181,173,1)",
+        "comment": ""
+      },
+      "Demi Wilkinson (color background)": {
+        "value": "rgba(190,168,135,1)",
+        "comment": ""
+      },
+      "Candice Wu (color background)": {
+        "value": "rgba(162,168,205,1)",
+        "comment": ""
+      },
+      "Natali Craig (color background)": {
+        "value": "rgba(209,186,169,1)",
+        "comment": ""
+      },
+      "Drew Cano (color background)": {
+        "value": "rgba(209,223,195,1)",
+        "comment": ""
+      },
+      "Orlando Diggs (color background)": {
+        "value": "rgba(207,195,167,1)",
+        "comment": ""
+      },
+      "Andi Lane (color background)": {
+        "value": "rgba(210,199,172,1)",
+        "comment": ""
+      },
+      "Kate Morrison (color background)": {
+        "value": "rgba(219,192,221,1)",
+        "comment": ""
+      },
+      "Koray Okumus (color background)": {
+        "value": "rgba(212,178,175,1)",
+        "comment": ""
+      },
+      "Ava Wright (color background)": {
+        "value": "rgba(201,186,156,1)",
+        "comment": ""
+      },
+      "Eve Leroy (color background)": {
+        "value": "rgba(218,185,187,1)",
+        "comment": ""
+      },
+      "Zahir Mays (color background)": {
+        "value": "rgba(195,199,223,1)",
+        "comment": ""
+      },
+      "Joshua Wilson (color background)": {
+        "value": "rgba(210,219,189,1)",
+        "comment": ""
+      },
+      "Rene Wells (color background)": {
+        "value": "rgba(223,204,159,1)",
+        "comment": ""
+      },
+      "Lori Bryson (color background)": {
+        "value": "rgba(217,185,187,1)",
+        "comment": ""
+      },
+      "Anaiah Whitten (color background)": {
+        "value": "rgba(204,192,221,1)",
+        "comment": ""
+      },
+      "Noah Pierre (color background)": {
+        "value": "rgba(212,175,189,1)",
+        "comment": ""
+      },
+      "Katherine Moss (color background)": {
+        "value": "rgba(162,168,205,1)",
+        "comment": ""
+      },
+      "Mollie Hall (color background)": {
+        "value": "rgba(203,159,162,1)",
+        "comment": ""
+      },
+      "Eduard Franze (color background)": {
+        "value": "rgba(219,208,189,1)",
+        "comment": ""
+      },
+      "Alec Whitten (color background)": {
+        "value": "rgba(171,182,119,1)",
+        "comment": ""
+      },
+      "Eva Bond (color background)": {
+        "value": "rgba(219,192,221,1)",
+        "comment": ""
+      },
+      "Sophia Perez (color background)": {
+        "value": "rgba(182,205,216,1)",
+        "comment": ""
+      },
+      "Lyle Kauffman (color background)": {
+        "value": "rgba(210,177,172,1)",
+        "comment": ""
+      },
+      "Kelly Williams (color background)": {
+        "value": "rgba(216,199,182,1)",
+        "comment": ""
+      },
+      "Lucy Bond (color background)": {
+        "value": "rgba(219,192,221,1)",
+        "comment": ""
+      },
+      "Alisa Hester (color background)": {
+        "value": "rgba(212,175,189,1)",
+        "comment": ""
+      },
+      "Rosalee Melvin (color background)": {
+        "value": "rgba(219,202,189,1)",
+        "comment": ""
+      },
+      "Loki Bright (color background)": {
+        "value": "rgba(185,207,208,1)",
+        "comment": ""
+      },
+      "Aliah Lane (color background)": {
+        "value": "rgba(215,192,221,1)",
+        "comment": ""
+      },
+      "Anita Cruz (color background)": {
+        "value": "rgba(194,199,184,1)",
+        "comment": ""
+      },
+      "Kari Rasmussen (color background)": {
+        "value": "rgba(169,181,141,1)",
+        "comment": ""
+      },
+      "Nala Goins (color background)": {
+        "value": "rgba(192,198,221,1)",
+        "comment": ""
+      }
+    }
+  },
+  "size": {
+    "Display 2xl": {
+      "Regular": {
+        "value": "72",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "72",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "72",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "72",
+        "comment": ""
+      }
+    },
+    "Display xl": {
+      "Regular": {
+        "value": "60",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "60",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "60",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "60",
+        "comment": ""
+      }
+    },
+    "Display lg": {
+      "Regular": {
+        "value": "48",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "48",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "48",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "48",
+        "comment": ""
+      }
+    },
+    "Display md": {
+      "Regular": {
+        "value": "36",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "36",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "36",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "36",
+        "comment": ""
+      }
+    },
+    "Display sm": {
+      "Regular": {
+        "value": "30",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "30",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "30",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "30",
+        "comment": ""
+      }
+    },
+    "Display xs": {
+      "Regular": {
+        "value": "24",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "24",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "24",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "24",
+        "comment": ""
+      }
+    },
+    "Text xl": {
+      "Regular": {
+        "value": "20",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "20",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "20",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "20",
+        "comment": ""
+      }
+    },
+    "Text lg": {
+      "Regular": {
+        "value": "18",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "18",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "18",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "18",
+        "comment": ""
+      }
+    },
+    "Text md": {
+      "Regular": {
+        "value": "16",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "16",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "16",
+        "comment": ""
+      },
+      "Bold": {
+        "value": "16",
+        "comment": ""
+      }
+    },
+    "Text sm": {
+      "Regular": {
+        "value": "14",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "14",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "14",
+        "comment": ""
+      }
+    },
+    "Text sm ": {
+      " Bold": {
+        "value": "14",
+        "comment": ""
+      }
+    },
+    "Text xs": {
+      "Regular": {
+        "value": "12",
+        "comment": ""
+      },
+      "Medium": {
+        "value": "12",
+        "comment": ""
+      },
+      "Semibold": {
+        "value": "12",
+        "comment": ""
+      }
+    },
+    "Text xs ": {
+      " Bold": {
+        "value": "12",
+        "comment": ""
+      }
+    }
+  }
+}
