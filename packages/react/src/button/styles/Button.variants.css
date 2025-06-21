@@ -2,9 +2,10 @@
    BUTTON VARIANTS MODULE — Variant-specific tokens and overrides
    ========================================================================= */
 
+/* Primary uses default tokens from Button.tokens.css — no override needed
 .button.primary {
-  /* Uses default tokens from Button.tokens.css — no override needed */
-}
+} 
+*/
 
 .button.secondary {
   --color-bg: var(--color-bg-subtle);

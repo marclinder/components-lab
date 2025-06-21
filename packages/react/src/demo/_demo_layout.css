@@ -40,6 +40,7 @@
 
   font-family: "Comic Neue", cursive, sans-serif;
   font-size: var(--font-size-18) !important;
+  color: white;
   text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,

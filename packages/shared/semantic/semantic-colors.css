@@ -1,53 +1,45 @@
-/**
- * semantic-colors.css
- *
- * Maps core color tokens (defined in colors.css) to role-based, semantic tokens.
- * Use these tokens in components to communicate *intent* rather than implementation.
- */
 :root {
-  /* Primitive extensions (define if needed) */
-  --white: #ffffff;
-  --black: #000000;
+  /* Base */
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-  /* Base text and surface colors */
+  /* Grayscale roles */
   --color-text-primary: var(--gray-900);
   --color-text-secondary: var(--gray-700);
   --color-text-disabled: var(--gray-500);
-  --color-text-muted: var(--gray-500);
   --color-text-inverse: var(--white);
+  --color-text-inverse-disabled: var(--gray-300);
 
   --color-bg-default: var(--gray-50);
   --color-bg-subtle: var(--gray-100);
   --color-border: var(--gray-300);
 
-  /* Brand / Primary */
-  --color-brand: var(
-    --brand-600
-  ); /* Used for buttons, links, active elements */
-  --color-brand-hover: var(--brand-700); /* Hover state for primary actions */
-  --color-brand-disabled: var(--brand-300); /* Disabled brand usage */
-  --color-on-brand: var(--white); /* Text/icon color on brand background */
+  /* Brand & Intent surfaces */
+  --color-surface-brand: var(--brand-600);
+  --color-surface-brand-hover: var(--brand-700);
+  --color-surface-brand-disabled: var(--brand-300);
 
-  /* Semantic status roles */
-  --color-error: var(--red-600);
-  --color-error-bg: var(--red-50);
-  --color-on-error: var(--white);
+  --color-surface-error: var(--red-600);
+  --color-surface-error-hover: var(--red-700);
+  --color-surface-error-disabled: var(--red-300);
 
-  --color-warning: var(--yellow-600);
-  --color-warning-bg: var(--yellow-50);
-  --color-on-warning: var(--black);
+  --color-surface-warning: var(--yellow-600);
+  --color-surface-warning-hover: var(--yellow-700);
+  --color-surface-warning-disabled: var(--yellow-300);
 
-  --color-success: var(--green-600);
-  --color-success-bg: var(--green-50);
-  --color-on-success: var(--white);
+  --color-surface-success: var(--green-600);
+  --color-surface-success-hover: var(--green-700);
+  --color-surface-success-disabled: var(--green-300);
 
-  --color-info: var(--blue-600);
-  --color-info-bg: var(--blue-50);
-  --color-on-info: var(--white);
+  --color-surface-info: var(--blue-600);
+  --color-surface-info-hover: var(--blue-700);
+  --color-surface-info-disabled: var(--blue-300);
 
-  /* Focus and interaction highlights */
+  /* Foreground on intent surfaces */
+  --color-on-surface: var(--white);
+  --color-on-surface-inverse: var(--gray-900);
+
+  /* Focus and overlay */
   --color-focus-ring: var(--blue-300);
-
-  /* Overlays */
   --color-overlay: rgba(0, 0, 0, 0.4);
 }
