@@ -2,25 +2,56 @@
    BUTTON VARIANTS MODULE — Variant-specific tokens and overrides
    ========================================================================= */
 
-/* Primary uses default tokens from Button.tokens.css — no override needed
-.button.primary {
-} 
+/* Primary .button.primary uses default tokens from 
 */
 
+.button.primary {
+  /* === Default State === */
+  --color-bg: var(--color-brand); /* Default background */
+  --color-border: var(--color-brand); /* Default border */
+  --color-text: var(--color-white); /* Default text */
+
+  /* === Hover State === */
+  --color-hover-bg: var(--color-brand-hover); /* Hover background */
+  --color-hover-border: var(--color-brand-hover); /* Hover border */
+  --color-hover-text: var(--color-text-inverse); /* Hover text */
+
+  /* === Disabled State === */
+  --color-disabled-bg: var(--color-brand-disabled); /* Disabled background */
+  --color-disabled-border: var(--color-brand-disabled); /* Disabled border */
+  --color-disabled-text: var(--color-white); /* Disabled text */
+}
+
 .button.secondary {
-  --color-bg: var(--color-bg-subtle);
-  --color-text: var(--color-text-secondary);
-  --color-border: var(--color-border);
-  --color-disabled-bg: var(--color-bg-disabled);
-  --color-disabled-text: var(--color-text-disabled);
-  --color-disabled-border: var(--color-border-disabled);
+  /* === Default State === */
+  --color-bg: var(--brand-50); /* Default background */
+  --color-border: var(--brand-300); /* Default border */
+  --color-text: var(--brand-700); /* Default text */
+
+  /* === Hover State === */
+  --color-hover-bg: var(--color-brand-hover); /* Hover background */
+  --color-hover-border: var(--color-brand-hover); /* Hover border */
+  --color-hover-text: var(--color-text-inverse); /* Hover text */
+
+  /* === Disabled State === */
+  --color-disabled-bg: var(--brand-100); /* Disabled background */
+  --color-disabled-border: var(--brand-200); /* Disabled border */
+  --color-disabled-text: var(--gray-500); /* Disabled text */
 }
 
 .button.tertiary {
-  --color-bg: transparent;
-  --color-text: var(--color-brand);
-  --color-border: var(--color-brand);
-  --color-disabled-bg: transparent;
-  --color-disabled-text: var(--color-brand-disabled);
-  --color-disabled-border: var(--color-brand-disabled);
+  /* === Default State === */
+  --color-bg: var(--color-white); /* Default background */
+  --color-border: var(--gray-400); /* Default border */
+  --color-text: var(--gray-700); /* Default text */
+
+  /* === Hover State === */
+  --color-hover-bg: var(--gray-200); /* Hover background */
+  --color-hover-border: var(--gray-400); /* Hover border */
+  --color-hover-text: var(--gray-700); /* Hover text */
+
+  /* === Disabled State === */
+  --color-disabled-bg: var(--gray-300); /* Disabled background */
+  --color-disabled-border: var(--gray-400); /* Disabled border */
+  --color-disabled-text: var(--gray-600); /* Disabled text */
 }

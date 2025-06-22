@@ -5,11 +5,12 @@
 ========================================================================== */
 
 /* === Base Colors === */
+/* === default === */
 .button {
   /* === Default State === */
   --color-bg: var(--color-brand); /* Default background */
   --color-border: var(--color-brand); /* Default border */
-  --color-text: var(--color-text-inverse); /* Default text */
+  --color-text: var(--color-white); /* Default text */
 
   /* === Hover State === */
   --color-hover-bg: var(--color-brand-hover); /* Hover background */
