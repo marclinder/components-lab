@@ -15,12 +15,17 @@
 
 /* === Primary Variant === */
 .button.primary.success {
+  /* === Default State === */
   --button-bg: var(--color-success);
   --button-text: var(--color-on-success);
   --button-border: var(--color-success);
+
+  /* === Hover State === */
   --button-hover-bg: var(--color-success-bg);
   --button-hover-border: var(--color-success-bg);
   --button-hover-text: var(--color-on-success);
+
+  /* === Disabled State === */
   --button-disabled-bg: var(--color-success-bg);
   --button-disabled-border: var(--color-success-bg);
   --button-disabled-text: var(--color-on-success);

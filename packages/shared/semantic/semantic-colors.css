@@ -1,3 +1,19 @@
+/* ============================================================================
+   DESIGN TOKEN SYSTEM - ROLE × INTENT × STATE
+   ----------------------------------------------------------------------------
+   Format: --color-{role}-{intent}[-{state}]
+   - role: semantic purpose (e.g. bg, surface, text, border)
+   - intent: meaning/feedback (e.g. primary, success, warning, danger, info)
+   - state (optional): UI state (e.g. hover, active, focus, disabled, selected)
+
+   Example:
+   --color-bg-primary             → default bg for primary elements
+   --color-bg-primary-hover       → hover bg for primary elements
+   --color-text-success-disabled  → disabled state color for success text
+
+   Base token references (e.g. --brand-300) ensure consistency and flexibility.
+   ============================================================================
+*/
 /**
  * semantic-colors.css
  *
@@ -18,43 +34,209 @@
  *
  * These tokens should be used across all components to ensure visual consistency.
  */
+
 :root {
-  /* Base text and surface colors */
-  --color-text-primary: var(--gray-900);
-  --color-text-secondary: var(--gray-700);
-  --color-text-disabled: var(--gray-500);
-  --color-text-muted: var(--color-gray-500);
-  --color-text-inverse: var(--color-white);
-  --color-text-inverse-disabled: var(--gray-50);
+  /* === BG TOKENS === */
+  /* Bg color for primary intent */
+  --color-bg-primary: var(--brand-300);
+  --color-bg-primary-hover: var(--brand-400);
+  --color-bg-primary-active: var(--brand-500);
+  --color-bg-primary-focus: var(--brand-400);
+  --color-bg-primary-disabled: var(--brand-200);
+  --color-bg-primary-selected: var(--brand-500);
+  /* Bg color for secondary intent */
+  --color-bg-secondary: var(--gray-200);
+  --color-bg-secondary-hover: var(--gray-300);
+  --color-bg-secondary-active: var(--gray-400);
+  --color-bg-secondary-focus: var(--gray-300);
+  --color-bg-secondary-disabled: var(--gray-100);
+  --color-bg-secondary-selected: var(--gray-400);
+  /* Bg color for tertiary intent */
+  --color-bg-tertiary: var(--brand-100);
+  --color-bg-tertiary-hover: var(--brand-200);
+  --color-bg-tertiary-active: var(--brand-300);
+  --color-bg-tertiary-focus: var(--brand-200);
+  --color-bg-tertiary-disabled: var(--brand-050);
+  --color-bg-tertiary-selected: var(--brand-300);
+  /* Bg color for warning intent */
+  --color-bg-warning: var(--yellow-300);
+  --color-bg-warning-hover: var(--yellow-400);
+  --color-bg-warning-active: var(--yellow-500);
+  --color-bg-warning-focus: var(--yellow-400);
+  --color-bg-warning-disabled: var(--yellow-200);
+  --color-bg-warning-selected: var(--yellow-500);
+  /* Bg color for success intent */
+  --color-bg-success: var(--green-300);
+  --color-bg-success-hover: var(--green-400);
+  --color-bg-success-active: var(--green-500);
+  --color-bg-success-focus: var(--green-400);
+  --color-bg-success-disabled: var(--green-200);
+  --color-bg-success-selected: var(--green-500);
+  /* Bg color for danger intent */
+  --color-bg-danger: var(--red-300);
+  --color-bg-danger-hover: var(--red-400);
+  --color-bg-danger-active: var(--red-500);
+  --color-bg-danger-focus: var(--red-400);
+  --color-bg-danger-disabled: var(--red-200);
+  --color-bg-danger-selected: var(--red-500);
+  /* Bg color for info intent */
+  --color-bg-info: var(--blue-300);
+  --color-bg-info-hover: var(--blue-400);
+  --color-bg-info-active: var(--blue-500);
+  --color-bg-info-focus: var(--blue-400);
+  --color-bg-info-disabled: var(--blue-200);
+  --color-bg-info-selected: var(--blue-500);
 
-  --color-bg-default: var(--gray-50);
-  --color-bg-subtle: var(--gray-100);
-  --color-border: var(--gray-300);
+  /* === SURFACE TOKENS === */
+  /* Surface color for primary intent */
+  --color-surface-primary: var(--brand-300);
+  --color-surface-primary-hover: var(--brand-400);
+  --color-surface-primary-active: var(--brand-500);
+  --color-surface-primary-focus: var(--brand-400);
+  --color-surface-primary-disabled: var(--brand-200);
+  --color-surface-primary-selected: var(--brand-500);
+  /* Surface color for secondary intent */
+  --color-surface-secondary: var(--brand-200);
+  --color-surface-secondary-hover: var(--brand-300);
+  --color-surface-secondary-active: var(--brand-400);
+  --color-surface-secondary-focus: var(--brand-300);
+  --color-surface-secondary-disabled: var(--brand-100);
+  --color-surface-secondary-selected: var(--brand-400);
+  /* Surface color for tertiary intent */
+  --color-surface-tertiary: var(--brand-100);
+  --color-surface-tertiary-hover: var(--brand-200);
+  --color-surface-tertiary-active: var(--brand-300);
+  --color-surface-tertiary-focus: var(--brand-200);
+  --color-surface-tertiary-disabled: var(--brand-050);
+  --color-surface-tertiary-selected: var(--brand-300);
+  /* Surface color for warning intent */
+  --color-surface-warning: var(--yellow-300);
+  --color-surface-warning-hover: var(--yellow-400);
+  --color-surface-warning-active: var(--yellow-500);
+  --color-surface-warning-focus: var(--yellow-400);
+  --color-surface-warning-disabled: var(--yellow-200);
+  --color-surface-warning-selected: var(--yellow-500);
+  /* Surface color for success intent */
+  --color-surface-success: var(--green-300);
+  --color-surface-success-hover: var(--green-400);
+  --color-surface-success-active: var(--green-500);
+  --color-surface-success-focus: var(--green-400);
+  --color-surface-success-disabled: var(--green-200);
+  --color-surface-success-selected: var(--green-500);
+  /* Surface color for danger intent */
+  --color-surface-danger: var(--red-300);
+  --color-surface-danger-hover: var(--red-400);
+  --color-surface-danger-active: var(--red-500);
+  --color-surface-danger-focus: var(--red-400);
+  --color-surface-danger-disabled: var(--red-200);
+  --color-surface-danger-selected: var(--red-500);
+  /* Surface color for info intent */
+  --color-surface-info: var(--blue-300);
+  --color-surface-info-hover: var(--blue-400);
+  --color-surface-info-active: var(--blue-500);
+  --color-surface-info-focus: var(--blue-400);
+  --color-surface-info-disabled: var(--blue-200);
+  --color-surface-info-selected: var(--blue-500);
 
-  /* Brand / Primary */
-  --color-brand: var(
-    --brand-600
-  ); /* Used for buttons, links, active elements */
-  --color-brand-hover: var(--brand-700); /* Hover state for primary actions */
-  --color-brand-disabled: var(--brand-500); /* Disabled brand usage */
+  /* === TEXT TOKENS === */
+  /* Text color for primary intent */
+  --color-text-primary: var(--brand-300);
+  --color-text-primary-hover: var(--brand-400);
+  --color-text-primary-active: var(--brand-500);
+  --color-text-primary-focus: var(--brand-400);
+  --color-text-primary-disabled: var(--brand-200);
+  --color-text-primary-selected: var(--brand-500);
+  /* Text color for secondary intent */
+  --color-text-secondary: var(--brand-200);
+  --color-text-secondary-hover: var(--brand-300);
+  --color-text-secondary-active: var(--brand-400);
+  --color-text-secondary-focus: var(--brand-300);
+  --color-text-secondary-disabled: var(--brand-100);
+  --color-text-secondary-selected: var(--brand-400);
+  /* Text color for tertiary intent */
+  --color-text-tertiary: var(--brand-100);
+  --color-text-tertiary-hover: var(--brand-200);
+  --color-text-tertiary-active: var(--brand-300);
+  --color-text-tertiary-focus: var(--brand-200);
+  --color-text-tertiary-disabled: var(--brand-050);
+  --color-text-tertiary-selected: var(--brand-300);
+  /* Text color for warning intent */
+  --color-text-warning: var(--yellow-300);
+  --color-text-warning-hover: var(--yellow-400);
+  --color-text-warning-active: var(--yellow-500);
+  --color-text-warning-focus: var(--yellow-400);
+  --color-text-warning-disabled: var(--yellow-200);
+  --color-text-warning-selected: var(--yellow-500);
+  /* Text color for success intent */
+  --color-text-success: var(--green-300);
+  --color-text-success-hover: var(--green-400);
+  --color-text-success-active: var(--green-500);
+  --color-text-success-focus: var(--green-400);
+  --color-text-success-disabled: var(--green-200);
+  --color-text-success-selected: var(--green-500);
+  /* Text color for danger intent */
+  --color-text-danger: var(--red-300);
+  --color-text-danger-hover: var(--red-400);
+  --color-text-danger-active: var(--red-500);
+  --color-text-danger-focus: var(--red-400);
+  --color-text-danger-disabled: var(--red-200);
+  --color-text-danger-selected: var(--red-500);
+  /* Text color for info intent */
+  --color-text-info: var(--blue-300);
+  --color-text-info-hover: var(--blue-400);
+  --color-text-info-active: var(--blue-500);
+  --color-text-info-focus: var(--blue-400);
+  --color-text-info-disabled: var(--blue-200);
+  --color-text-info-selected: var(--blue-500);
 
-  /* Semantic status roles */
-  --color-error: var(--red-600); /* Used for errors, destructive actions */
-  --color-error-bg: var(--red-50);
-  --color-warning: var(--yellow-600); /* Used for alerts, cautions */
-  --color-warning-bg: var(--yellow-50);
-  --color-success: var(
-    --green-600
-  ); /* Used for confirmations, success states */
-  --color-success-bg: var(--green-50);
-  --color-info: var(--blue-600); /* Used for neutral or informative content */
-  --color-info-bg: var(--blue-50);
-
-  /* Focus and interaction highlights */
-  --color-focus-ring: var(--blue-300); /* Used for keyboard focus outlines */
-
-  /* Backdrop or overlay effects */
-  --color-overlay: rgba(0, 0, 0, 0.4); /* Used for modals, toasts, etc. */
-
-  --color-white: #ffffff; /* Pure white for text or backgrounds */
+  /* === BORDER TOKENS === */
+  /* Border color for primary intent */
+  --color-border-primary: var(--brand-300);
+  --color-border-primary-hover: var(--brand-400);
+  --color-border-primary-active: var(--brand-500);
+  --color-border-primary-focus: var(--brand-400);
+  --color-border-primary-disabled: var(--brand-200);
+  --color-border-primary-selected: var(--brand-500);
+  /* Border color for secondary intent */
+  --color-border-secondary: var(--brand-200);
+  --color-border-secondary-hover: var(--brand-300);
+  --color-border-secondary-active: var(--brand-400);
+  --color-border-secondary-focus: var(--brand-300);
+  --color-border-secondary-disabled: var(--brand-100);
+  --color-border-secondary-selected: var(--brand-400);
+  /* Border color for tertiary intent */
+  --color-border-tertiary: var(--brand-100);
+  --color-border-tertiary-hover: var(--brand-200);
+  --color-border-tertiary-active: var(--brand-300);
+  --color-border-tertiary-focus: var(--brand-200);
+  --color-border-tertiary-disabled: var(--brand-050);
+  --color-border-tertiary-selected: var(--brand-300);
+  /* Border color for warning intent */
+  --color-border-warning: var(--yellow-300);
+  --color-border-warning-hover: var(--yellow-400);
+  --color-border-warning-active: var(--yellow-500);
+  --color-border-warning-focus: var(--yellow-400);
+  --color-border-warning-disabled: var(--yellow-200);
+  --color-border-warning-selected: var(--yellow-500);
+  /* Border color for success intent */
+  --color-border-success: var(--green-300);
+  --color-border-success-hover: var(--green-400);
+  --color-border-success-active: var(--green-500);
+  --color-border-success-focus: var(--green-400);
+  --color-border-success-disabled: var(--green-200);
+  --color-border-success-selected: var(--green-500);
+  /* Border color for danger intent */
+  --color-border-danger: var(--red-300);
+  --color-border-danger-hover: var(--red-400);
+  --color-border-danger-active: var(--red-500);
+  --color-border-danger-focus: var(--red-400);
+  --color-border-danger-disabled: var(--red-200);
+  --color-border-danger-selected: var(--red-500);
+  /* Border color for info intent */
+  --color-border-info: var(--blue-300);
+  --color-border-info-hover: var(--blue-400);
+  --color-border-info-active: var(--blue-500);
+  --color-border-info-focus: var(--blue-400);
+  --color-border-info-disabled: var(--blue-200);
+  --color-border-info-selected: var(--blue-500);
 }

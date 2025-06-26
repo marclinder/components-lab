@@ -1,0 +1,836 @@
+{
+  "roles": [
+    {
+      "role": "bg",
+      "intents": [
+        {
+          "intent": "primary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-300"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-400"
+            },
+            {
+              "state": "active",
+              "color": "--brand-500"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-100"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-500"
+            }
+          ]
+        },
+        {
+          "intent": "secondary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-200"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-300"
+            },
+            {
+              "state": "active",
+              "color": "--brand-400"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-200"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-100"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-400"
+            }
+          ]
+        },
+        {
+          "intent": "tertiary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-100"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-200"
+            },
+            {
+              "state": "active",
+              "color": "--brand-300"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-50"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-300"
+            }
+          ]
+        },
+        {
+          "intent": "warning",
+          "states": [
+            {
+              "state": "default",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "hover",
+              "color": "--yellow-400"
+            },
+            {
+              "state": "active",
+              "color": "--yellow-500"
+            },
+            {
+              "state": "focus",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--yellow-100"
+            },
+            {
+              "state": "selected",
+              "color": "--yellow-500"
+            }
+          ]
+        },
+        {
+          "intent": "success",
+          "states": [
+            {
+              "state": "default",
+              "color": "--green-300"
+            },
+            {
+              "state": "hover",
+              "color": "--green-400"
+            },
+            {
+              "state": "active",
+              "color": "--green-500"
+            },
+            {
+              "state": "focus",
+              "color": "--green-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--green-100"
+            },
+            {
+              "state": "selected",
+              "color": "--green-500"
+            }
+          ]
+        },
+        {
+          "intent": "danger",
+          "states": [
+            {
+              "state": "default",
+              "color": "--red-300"
+            },
+            {
+              "state": "hover",
+              "color": "--red-400"
+            },
+            {
+              "state": "active",
+              "color": "--red-500"
+            },
+            {
+              "state": "focus",
+              "color": "--red-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--red-100"
+            },
+            {
+              "state": "selected",
+              "color": "--red-500"
+            }
+          ]
+        },
+        {
+          "intent": "info",
+          "states": [
+            {
+              "state": "default",
+              "color": "--blue-300"
+            },
+            {
+              "state": "hover",
+              "color": "--blue-400"
+            },
+            {
+              "state": "active",
+              "color": "--blue-500"
+            },
+            {
+              "state": "focus",
+              "color": "--blue-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--blue-100"
+            },
+            {
+              "state": "selected",
+              "color": "--blue-500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "surface",
+      "intents": [
+        {
+          "intent": "primary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-100"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-200"
+            },
+            {
+              "state": "active",
+              "color": "--brand-300"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-50"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-300"
+            }
+          ]
+        },
+        {
+          "intent": "secondary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-50"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-100"
+            },
+            {
+              "state": "active",
+              "color": "--brand-200"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-50"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-25"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-200"
+            }
+          ]
+        },
+        {
+          "intent": "tertiary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-25"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-50"
+            },
+            {
+              "state": "active",
+              "color": "--brand-100"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-25"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-10"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-100"
+            }
+          ]
+        },
+        {
+          "intent": "warning",
+          "states": [
+            {
+              "state": "default",
+              "color": "--yellow-100"
+            },
+            {
+              "state": "hover",
+              "color": "--yellow-200"
+            },
+            {
+              "state": "active",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "focus",
+              "color": "--yellow-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--yellow-50"
+            },
+            {
+              "state": "selected",
+              "color": "--yellow-300"
+            }
+          ]
+        },
+        {
+          "intent": "success",
+          "states": [
+            {
+              "state": "default",
+              "color": "--green-100"
+            },
+            {
+              "state": "hover",
+              "color": "--green-200"
+            },
+            {
+              "state": "active",
+              "color": "--green-300"
+            },
+            {
+              "state": "focus",
+              "color": "--green-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--green-50"
+            },
+            {
+              "state": "selected",
+              "color": "--green-300"
+            }
+          ]
+        },
+        {
+          "intent": "danger",
+          "states": [
+            {
+              "state": "default",
+              "color": "--red-100"
+            },
+            {
+              "state": "hover",
+              "color": "--red-200"
+            },
+            {
+              "state": "active",
+              "color": "--red-300"
+            },
+            {
+              "state": "focus",
+              "color": "--red-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--red-50"
+            },
+            {
+              "state": "selected",
+              "color": "--red-300"
+            }
+          ]
+        },
+        {
+          "intent": "info",
+          "states": [
+            {
+              "state": "default",
+              "color": "--blue-100"
+            },
+            {
+              "state": "hover",
+              "color": "--blue-200"
+            },
+            {
+              "state": "active",
+              "color": "--blue-300"
+            },
+            {
+              "state": "focus",
+              "color": "--blue-100"
+            },
+            {
+              "state": "disabled",
+              "color": "--blue-50"
+            },
+            {
+              "state": "selected",
+              "color": "--blue-300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "border",
+      "intents": [
+        {
+          "intent": "primary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-400"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-500"
+            },
+            {
+              "state": "active",
+              "color": "--brand-600"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-400"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-200"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-600"
+            }
+          ]
+        },
+        {
+          "intent": "secondary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-300"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-400"
+            },
+            {
+              "state": "active",
+              "color": "--brand-500"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-100"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-500"
+            }
+          ]
+        },
+        {
+          "intent": "tertiary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-200"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-300"
+            },
+            {
+              "state": "active",
+              "color": "--brand-400"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-200"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-50"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-400"
+            }
+          ]
+        },
+        {
+          "intent": "warning",
+          "states": [
+            {
+              "state": "default",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "hover",
+              "color": "--yellow-400"
+            },
+            {
+              "state": "active",
+              "color": "--yellow-500"
+            },
+            {
+              "state": "focus",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--yellow-200"
+            },
+            {
+              "state": "selected",
+              "color": "--yellow-500"
+            }
+          ]
+        },
+        {
+          "intent": "success",
+          "states": [
+            {
+              "state": "default",
+              "color": "--green-300"
+            },
+            {
+              "state": "hover",
+              "color": "--green-400"
+            },
+            {
+              "state": "active",
+              "color": "--green-500"
+            },
+            {
+              "state": "focus",
+              "color": "--green-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--green-200"
+            },
+            {
+              "state": "selected",
+              "color": "--green-500"
+            }
+          ]
+        },
+        {
+          "intent": "danger",
+          "states": [
+            {
+              "state": "default",
+              "color": "--red-300"
+            },
+            {
+              "state": "hover",
+              "color": "--red-400"
+            },
+            {
+              "state": "active",
+              "color": "--red-500"
+            },
+            {
+              "state": "focus",
+              "color": "--red-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--red-200"
+            },
+            {
+              "state": "selected",
+              "color": "--red-500"
+            }
+          ]
+        },
+        {
+          "intent": "info",
+          "states": [
+            {
+              "state": "default",
+              "color": "--blue-300"
+            },
+            {
+              "state": "hover",
+              "color": "--blue-400"
+            },
+            {
+              "state": "active",
+              "color": "--blue-500"
+            },
+            {
+              "state": "focus",
+              "color": "--blue-300"
+            },
+            {
+              "state": "disabled",
+              "color": "--blue-200"
+            },
+            {
+              "state": "selected",
+              "color": "--blue-500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "text",
+      "intents": [
+        {
+          "intent": "primary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-700"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-800"
+            },
+            {
+              "state": "active",
+              "color": "--brand-900"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-700"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-300"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-900"
+            }
+          ]
+        },
+        {
+          "intent": "secondary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-600"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-700"
+            },
+            {
+              "state": "active",
+              "color": "--brand-800"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-600"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-200"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-800"
+            }
+          ]
+        },
+        {
+          "intent": "tertiary",
+          "states": [
+            {
+              "state": "default",
+              "color": "--brand-500"
+            },
+            {
+              "state": "hover",
+              "color": "--brand-600"
+            },
+            {
+              "state": "active",
+              "color": "--brand-700"
+            },
+            {
+              "state": "focus",
+              "color": "--brand-500"
+            },
+            {
+              "state": "disabled",
+              "color": "--brand-100"
+            },
+            {
+              "state": "selected",
+              "color": "--brand-700"
+            }
+          ]
+        },
+        {
+          "intent": "warning",
+          "states": [
+            {
+              "state": "default",
+              "color": "--yellow-700"
+            },
+            {
+              "state": "hover",
+              "color": "--yellow-800"
+            },
+            {
+              "state": "active",
+              "color": "--yellow-900"
+            },
+            {
+              "state": "focus",
+              "color": "--yellow-700"
+            },
+            {
+              "state": "disabled",
+              "color": "--yellow-300"
+            },
+            {
+              "state": "selected",
+              "color": "--yellow-900"
+            }
+          ]
+        },
+        {
+          "intent": "success",
+          "states": [
+            {
+              "state": "default",
+              "color": "--green-700"
+            },
+            {
+              "state": "hover",
+              "color": "--green-800"
+            },
+            {
+              "state": "active",
+              "color": "--green-900"
+            },
+            {
+              "state": "focus",
+              "color": "--green-700"
+            },
+            {
+              "state": "disabled",
+              "color": "--green-300"
+            },
+            {
+              "state": "selected",
+              "color": "--green-900"
+            }
+          ]
+        },
+        {
+          "intent": "danger",
+          "states": [
+            {
+              "state": "default",
+              "color": "--red-700"
+            },
+            {
+              "state": "hover",
+              "color": "--red-800"
+            },
+            {
+              "state": "active",
+              "color": "--red-900"
+            },
+            {
+              "state": "focus",
+              "color": "--red-700"
+            },
+            {
+              "state": "disabled",
+              "color": "--red-300"
+            },
+            {
+              "state": "selected",
+              "color": "--red-900"
+            }
+          ]
+        },
+        {
+          "intent": "info",
+          "states": [
+            {
+              "state": "default",
+              "color": "--blue-700"
+            },
+            {
+              "state": "hover",
+              "color": "--blue-800"
+            },
+            {
+              "state": "active",
+              "color": "--blue-900"
+            },
+            {
+              "state": "focus",
+              "color": "--blue-700"
+            },
+            {
+              "state": "disabled",
+              "color": "--blue-300"
+            },
+            {
+              "state": "selected",
+              "color": "--blue-900"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

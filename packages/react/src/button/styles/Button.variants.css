@@ -2,56 +2,55 @@
    BUTTON VARIANTS MODULE — Variant-specific tokens and overrides
    ========================================================================= */
 
-/* Primary .button.primary uses default tokens from 
-*/
+/* Primary .button.primary uses default tokens from */
 
 .button.primary {
   /* === Default State === */
-  --color-bg: var(--color-brand); /* Default background */
-  --color-border: var(--color-brand); /* Default border */
-  --color-text: var(--color-white); /* Default text */
+  --color-bg: var(--color-surface-primary);
+  --color-border: var(--color-border-primary);
+  --color-text: var(--color-text-primary);
 
   /* === Hover State === */
-  --color-hover-bg: var(--color-brand-hover); /* Hover background */
-  --color-hover-border: var(--color-brand-hover); /* Hover border */
-  --color-hover-text: var(--color-text-inverse); /* Hover text */
+  --color-hover-bg: var(--color-surface-primary-hover);
+  --color-hover-border: var(--color-border-primary-hover);
+  --color-hover-text: var(--color-text-primary-hover);
 
   /* === Disabled State === */
-  --color-disabled-bg: var(--color-brand-disabled); /* Disabled background */
-  --color-disabled-border: var(--color-brand-disabled); /* Disabled border */
-  --color-disabled-text: var(--color-white); /* Disabled text */
+  --color-disabled-bg: var(--color-surface-primary-disabled);
+  --color-disabled-border: var(--color-border-primary-disabled);
+  --color-disabled-text: var(--color-text-primary-disabled);
 }
 
 .button.secondary {
   /* === Default State === */
-  --color-bg: var(--brand-50); /* Default background */
-  --color-border: var(--brand-300); /* Default border */
-  --color-text: var(--brand-700); /* Default text */
+  --color-bg: var(--color-surface-secondary);
+  --color-border: var(--color-border-secondary);
+  --color-text: var(--color-text-secondary);
 
   /* === Hover State === */
-  --color-hover-bg: var(--color-brand-hover); /* Hover background */
-  --color-hover-border: var(--color-brand-hover); /* Hover border */
-  --color-hover-text: var(--color-text-inverse); /* Hover text */
+  --color-hover-bg: var(--color-surface-secondary-hover);
+  --color-hover-border: var(--color-border-secondary-hover);
+  --color-hover-text: var(--color-text-secondary-hover);
 
   /* === Disabled State === */
-  --color-disabled-bg: var(--brand-100); /* Disabled background */
-  --color-disabled-border: var(--brand-200); /* Disabled border */
-  --color-disabled-text: var(--gray-500); /* Disabled text */
+  --color-disabled-bg: var(--color-surface-secondary-disabled);
+  --color-disabled-border: var(--color-border-secondary-disabled);
+  --color-disabled-text: var(--color-text-secondary-disabled);
 }
 
 .button.tertiary {
   /* === Default State === */
-  --color-bg: var(--color-white); /* Default background */
-  --color-border: var(--gray-400); /* Default border */
-  --color-text: var(--gray-700); /* Default text */
+  --color-bg: var(--color-surface-tertiary);
+  --color-border: var(--color-border-tertiary);
+  --color-text: var(--color-text-tertiary);
 
   /* === Hover State === */
-  --color-hover-bg: var(--gray-200); /* Hover background */
-  --color-hover-border: var(--gray-400); /* Hover border */
-  --color-hover-text: var(--gray-700); /* Hover text */
+  --color-hover-bg: var(--color-surface-tertiary-hover);
+  --color-hover-border: var(--color-border-tertiary-hover);
+  --color-hover-text: var(--color-text-tertiary-hover);
 
   /* === Disabled State === */
-  --color-disabled-bg: var(--gray-300); /* Disabled background */
-  --color-disabled-border: var(--gray-400); /* Disabled border */
-  --color-disabled-text: var(--gray-600); /* Disabled text */
+  --color-disabled-bg: var(--color-surface-tertiary-disabled);
+  --color-disabled-border: var(--color-border-tertiary-disabled);
+  --color-disabled-text: var(--color-text-tertiary-disabled);
 }

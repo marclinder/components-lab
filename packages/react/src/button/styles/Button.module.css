@@ -4,8 +4,8 @@
 
 /* Imports shared tokens and variants */
 @import url("./Button.tokens.css");
-@import url("./Button.variants.css");
 @import url("./Button.intents.css");
+@import url("./Button.variants.css");
 
 .button {
   cursor: pointer;
@@ -16,16 +16,16 @@
   justify-content: center;
 
   border: var(--border-default);
-  border-color: var(--color-border);
+  border-color: var(--color-border-primary);
   border-radius: var(--radius-lg);
 
   font-family: inherit;
   font-weight: var(--font-weight-semibold);
   line-height: var(--font-size-20);
-  color: var(--color-text);
+  color: var(--color-text-primary);
   text-align: center;
 
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   box-shadow: var(--shadow-button);
 
   transition: var(--transition-all);
@@ -87,18 +87,18 @@
 }
 
 .button:hover:not(.disabled) {
-  border-color: var(--color-hover-border);
-  color: var(--color-hover-text);
-  background-color: var(--color-hover-bg);
+  border-color: var(--border-primary-hover);
+  color: var(--text-primary-hover);
+  background-color: var(--color-bg-primary-hover);
 }
 
 .button.disabled {
   cursor: not-allowed;
 
-  border-color: var(--color-disabled-border);
+  border-color: var(--border-primary-disabled);
 
-  color: var(--color-disabled-text);
+  color: var(--text-primary-disabled);
 
   opacity: 0.7;
-  background-color: var(--color-disabled-bg);
+  background-color: var(--color-bg-primary-disabled);
 }

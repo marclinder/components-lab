@@ -52,12 +52,12 @@ export const Button: React.FC<ButtonProps> = ({
     styles.button,
     styles[size],
     styles[variant],
+    intent && styles[intent],
     iconOnly && styles["icon-only"],
     disabled && styles.disabled,
-    intent && styles[intent],
     className,
   );
-
+  console.log("Button rendered with classNames:", classNames);
   return (
     <button
       type="button"

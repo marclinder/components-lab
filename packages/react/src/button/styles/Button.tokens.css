@@ -5,20 +5,21 @@
 ========================================================================== */
 
 /* === Base Colors === */
+
 /* === default === */
 .button {
   /* === Default State === */
-  --color-bg: var(--color-brand); /* Default background */
-  --color-border: var(--color-brand); /* Default border */
-  --color-text: var(--color-white); /* Default text */
+  --color-bg: var(--bg-primary);
+  --color-border: var(--border-primary);
+  --color-text: var(--text-primary);
 
   /* === Hover State === */
-  --color-hover-bg: var(--color-brand-hover); /* Hover background */
-  --color-hover-border: var(--color-brand-hover); /* Hover border */
-  --color-hover-text: var(--color-text-inverse); /* Hover text */
+  --color-hover-bg: var(--bg-primary-hover);
+  --color-hover-border: var(--border-primary-hover);
+  --color-hover-text: var(--text-primary-hover);
 
   /* === Disabled State === */
-  --color-disabled-bg: var(--color-brand-disabled); /* Disabled background */
-  --color-disabled-border: var(--color-brand-disabled); /* Disabled border */
-  --color-disabled-text: var(--color-text-inverse-disabled); /* Disabled text */
+  --color-disabled-bg: var(--bg-primary-disabled);
+  --color-disabled-border: var(--border-primary-disabled);
+  --color-disabled-text: var(--text-primary-disabled);
 }
