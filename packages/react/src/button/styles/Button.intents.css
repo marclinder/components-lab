@@ -85,137 +85,136 @@
 /* === Secondary Variant === */
 .button.secondary.success {
   /* === Default State === */
-  --btn-bg: var(--color-surface-success);
-  --btn-text: var(--color-on-surface-success);
-  --btn-border: var(--color-surface-success);
+  --btn-bg: var(--green-100);
+  --btn-text: var(--green-900);
+  --btn-border: var(--green-100);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-success);
-  --btn-text-hover: var(--color-on-success);
-  --btn-border-hover: var(--color-success);
+  --btn-bg-hover: var(--green-200);
+  --btn-text-hover: var(--green-900);
+  --btn-border-hover: var(--green-200);
 
   /* === Disabled State === */
-  --btn-bg-disabled: var(--color-success-bg);
-  --btn-text-disabled: var(--color-success);
-  --btn-border-disabled: var(--color-success-bg);
+  --btn-bg-disabled: var(--green-50);
+  --btn-text-disabled: var(--green-300);
+  --btn-border-disabled: var(--green-50);
 }
 
 .button.secondary.warning {
   /* === Default State === */
-  --btn-bg: var(--color-warning-bg);
-  --btn-text: var(--color-warning);
-  --btn-border: var(--color-warning);
+  --btn-bg: var(--yellow-100);
+  --btn-text: var(--yellow-900);
+  --btn-border: var(--yellow-100);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-warning);
-  --btn-text-hover: var(--color-on-warning);
-  --btn-border-hover: var(--color-warning);
+  --btn-bg-hover: var(--yellow-200);
+  --btn-text-hover: var(--yellow-900);
+  --btn-border-hover: var(--yellow-200);
 
   /* === Disabled State === */
-  --btn-bg-disabled: var(--color-warning-bg);
-  --btn-text-disabled: var(--color-warning);
-  --btn-border-disabled: var(--color-warning-bg);
+  --btn-bg-disabled: var(--yellow-50);
+  --btn-text-disabled: var(--yellow-400);
+  --btn-border-disabled: var(--yellow-50);
 }
 
 .button.secondary.error {
   /* === Default State === */
-  --btn-bg: var(--color-danger-bg);
-  --btn-text: var(--color-danger);
-  --btn-border: var(--color-danger);
+  --btn-bg: var(--red-100);
+  --btn-text: var(--red-900);
+  --btn-border: var(--red-100);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-danger);
-  --btn-text-hover: var(--color-on-danger);
-  --btn-border-hover: var(--color-danger);
+  --btn-bg-hover: var(--red-200);
+  --btn-text-hover: var(--red-900);
+  --btn-border-hover: var(--red-200);
 
   /* === Disabled State === */
-  --btn-bg-disabled: var(--color-danger-bg);
-  --btn-text-disabled: var(--color-danger);
-  --btn-border-disabled: var(--color-danger-bg);
+  --btn-bg-disabled: var(--red-50);
+  --btn-text-disabled: var(--red-300);
+  --btn-border-disabled: var(--red-50);
 }
 
 .button.secondary.info {
   /* === Default State === */
-  --btn-bg: var(--color-info-bg);
-  --btn-text: var(--color-info);
-  --btn-border: var(--color-info);
+  --btn-bg: var(--blue-100);
+  --btn-text: var(--blue-900);
+  --btn-border: var(--blue-100);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-info);
-  --btn-text-hover: var(--color-on-info);
-  --btn-border-hover: var(--color-info);
+  --btn-bg-hover: var(--blue-200);
+  --btn-text-hover: var(--blue-900);
+  --btn-border-hover: var(--blue-200);
 
   /* === Disabled State === */
-  --btn-bg-disabled: var(--color-info-bg);
-  --btn-text-disabled: var(--color-info);
-  --btn-border-disabled: var(--color-info-bg);
+  --btn-bg-disabled: var(--blue-50);
+  --btn-text-disabled: var(--blue-300);
+  --btn-border-disabled: var(--blue-50);
 }
-
 /* === Tertiary Variant === */
 .button.tertiary.success {
   /* === Default State === */
-  --btn-bg: transparent;
-  --btn-text: var(--color-success);
-  --btn-border: transparent;
+  --btn-bg: var(--green-25);
+  --btn-text: var(--green-800);
+  --btn-border: var(--green-300);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-success-bg);
-  --btn-text-hover: var(--color-success);
-  --btn-border-hover: transparent;
+  --btn-bg-hover: var(--green-50);
+  --btn-text-hover: var(--green-900);
+  --btn-border-hover: var(--green-400);
 
   /* === Disabled State === */
-  --btn-bg-disabled: transparent;
-  --btn-text-disabled: var(--color-success);
-  --btn-border-disabled: transparent;
+  --btn-bg-disabled: var(--green-50);
+  --btn-text-disabled: var(--green-300);
+  --btn-border-disabled: var(--green-100);
 }
 
 .button.tertiary.warning {
   /* === Default State === */
-  --btn-bg: transparent;
-  --btn-text: var(--color-warning);
-  --btn-border: transparent;
+  --btn-bg: var(--yellow-25);
+  --btn-text: var(--yellow-800);
+  --btn-border: var(--yellow-300);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-warning-bg);
-  --btn-text-hover: var(--color-warning);
-  --btn-border-hover: transparent;
+  --btn-bg-hover: var(--yellow-50);
+  --btn-text-hover: var(--yellow-900);
+  --btn-border-hover: var(--yellow-400);
 
   /* === Disabled State === */
-  --btn-bg-disabled: transparent;
-  --btn-text-disabled: var(--color-warning);
-  --btn-border-disabled: transparent;
+  --btn-bg-disabled: var(--yellow-50);
+  --btn-text-disabled: var(--yellow-300);
+  --btn-border-disabled: var(--yellow-100);
 }
 
 .button.tertiary.error {
   /* === Default State === */
-  --btn-bg: transparent;
-  --btn-text: var(--color-danger);
-  --btn-border: transparent;
+  --btn-bg: var(--red-25);
+  --btn-text: var(--red-800);
+  --btn-border: var(--red-300);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-danger-bg);
-  --btn-text-hover: var(--color-danger);
-  --btn-border-hover: transparent;
+  --btn-bg-hover: var(--red-50);
+  --btn-text-hover: var(--red-900);
+  --btn-border-hover: var(--red-400);
 
   /* === Disabled State === */
-  --btn-bg-disabled: transparent;
-  --btn-text-disabled: var(--color-danger);
-  --btn-border-disabled: transparent;
+  --btn-bg-disabled: var(--red-50);
+  --btn-text-disabled: var(--red-300);
+  --btn-border-disabled: var(--red-100);
 }
 
 .button.tertiary.info {
   /* === Default State === */
-  --btn-bg: transparent;
-  --btn-text: var(--color-info);
-  --btn-border: transparent;
+  --btn-bg: var(--blue-25);
+  --btn-text: var(--blue-800);
+  --btn-border: var(--blue-300);
 
   /* === Hover State === */
-  --btn-bg-hover: var(--color-info-bg);
-  --btn-text-hover: var(--color-info);
-  --btn-border-hover: transparent;
+  --btn-bg-hover: var(--blue-50);
+  --btn-text-hover: var(--blue-900);
+  --btn-border-hover: var(--blue-400);
 
   /* === Disabled State === */
-  --btn-bg-disabled: transparent;
-  --btn-text-disabled: var(--color-info);
-  --btn-border-disabled: transparent;
+  --btn-bg-disabled: var(--blue-50);
+  --btn-text-disabled: var(--blue-300);
+  --btn-border-disabled: var(--blue-100);
 }
