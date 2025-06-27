@@ -18,10 +18,6 @@ export function ButtonDemo() {
           for low-emphasis actions.
         </p>
 
-        <Button intent="success" action={() => window.alert("Click")}>
-          Success ?
-        </Button>
-
         <div className="demo-row">
           <Button variant="primary" action={() => window.alert("Click")}>
             Primary

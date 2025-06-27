@@ -97,19 +97,19 @@
   --color-surface-primary-selected: var(--brand-500);
 
   /* Surface color for secondary intent */
-  --color-surface-secondary: var(--brand-200);
-  --color-surface-secondary-hover: var(--brand-300);
-  --color-surface-secondary-active: var(--brand-400);
-  --color-surface-secondary-focus: var(--brand-300);
-  --color-surface-secondary-disabled: var(--brand-100);
-  --color-surface-secondary-selected: var(--brand-400);
+  --color-surface-secondary: var(--brand-50);
+  --color-surface-secondary-hover: var(--brand-100);
+  --color-surface-secondary-active: var(--brand-200);
+  --color-surface-secondary-focus: var(--brand-200);
+  --color-surface-secondary-disabled: var(--brand-200);
+  --color-surface-secondary-selected: var(--brand-500);
   /* Surface color for tertiary intent */
-  --color-surface-tertiary: var(--brand-100);
-  --color-surface-tertiary-hover: var(--brand-200);
-  --color-surface-tertiary-active: var(--brand-300);
-  --color-surface-tertiary-focus: var(--brand-200);
-  --color-surface-tertiary-disabled: var(--brand-050);
-  --color-surface-tertiary-selected: var(--brand-300);
+  --color-surface-tertiary: var(--white);
+  --color-surface-tertiary-hover: var(--gray-50);
+  --color-surface-tertiary-active: var(--gray-300);
+  --color-surface-tertiary-focus: var(--gray-200);
+  --color-surface-tertiary-disabled: var(--gray-050);
+  --color-surface-tertiary-selected: var(--gray-300);
   /* Surface color for warning intent */
   --color-surface-warning: var(--yellow-300);
   --color-surface-warning-hover: var(--yellow-400);
@@ -149,7 +149,7 @@
   --color-text-primary-selected: var(--brand-500);
   /* Text color for secondary intent */
   --color-text-secondary: var(--brand-200);
-  --color-text-secondary-hover: var(--brand-300);
+  --color-text-secondary-hover: var(--brand-200);
   --color-text-secondary-active: var(--brand-400);
   --color-text-secondary-focus: var(--brand-300);
   --color-text-secondary-disabled: var(--brand-100);
@@ -192,26 +192,26 @@
 
   /* === BORDER TOKENS === */
   /* Border color for primary intent */
-  --color-border-primary: var(--brand-300);
-  --color-border-primary-hover: var(--brand-400);
+  --color-border-primary: var(--brand-600);
+  --color-border-primary-hover: var(--brand-700);
   --color-border-primary-active: var(--brand-500);
   --color-border-primary-focus: var(--brand-400);
   --color-border-primary-disabled: var(--brand-200);
   --color-border-primary-selected: var(--brand-500);
   /* Border color for secondary intent */
-  --color-border-secondary: var(--brand-200);
-  --color-border-secondary-hover: var(--brand-300);
+  --color-border-secondary: var(--brand-50);
+  --color-border-secondary-hover: var(--brand-50);
   --color-border-secondary-active: var(--brand-400);
   --color-border-secondary-focus: var(--brand-300);
   --color-border-secondary-disabled: var(--brand-100);
   --color-border-secondary-selected: var(--brand-400);
   /* Border color for tertiary intent */
-  --color-border-tertiary: var(--brand-100);
-  --color-border-tertiary-hover: var(--brand-200);
-  --color-border-tertiary-active: var(--brand-300);
-  --color-border-tertiary-focus: var(--brand-200);
-  --color-border-tertiary-disabled: var(--brand-050);
-  --color-border-tertiary-selected: var(--brand-300);
+  --color-border-tertiary: var(--gray-300);
+  --color-border-tertiary-hover: var(--gray-200);
+  --color-border-tertiary-active: var(--gray-300);
+  --color-border-tertiary-focus: var(--gray-200);
+  --color-border-tertiary-disabled: var(--gray-050);
+  --color-border-tertiary-selected: var(--gray-300);
   /* Border color for warning intent */
   --color-border-warning: var(--yellow-300);
   --color-border-warning-hover: var(--yellow-400);
@@ -247,22 +247,22 @@
   --color-on-surface-primary-hover: var(--white);
   --color-on-surface-primary-active: var(--white);
   --color-on-surface-primary-focus: var(--white);
-  --color-on-surface-primary-disabled: var(--gray-300);
+  --color-on-surface-primary-disabled: var(--white);
   --color-on-surface-primary-selected: var(--white);
 
-  --color-on-surface-secondary: var(--gray-900);
-  --color-on-surface-secondary-hover: var(--gray-900);
-  --color-on-surface-secondary-active: var(--gray-900);
-  --color-on-surface-secondary-focus: var(--gray-900);
-  --color-on-surface-secondary-disabled: var(--gray-500);
-  --color-on-surface-secondary-selected: var(--gray-900);
+  --color-on-surface-secondary: var(--brand-700);
+  --color-on-surface-secondary-hover: var(--brand-700);
+  --color-on-surface-secondary-active: var(--brand-700);
+  --color-on-surface-secondary-focus: var(--brand-700);
+  --color-on-surface-secondary-disabled: var(--brand-400);
+  --color-on-surface-secondary-selected: var(--brand-700);
 
-  --color-on-surface-tertiary: var(--brand-700);
-  --color-on-surface-tertiary-hover: var(--brand-700);
-  --color-on-surface-tertiary-active: var(--brand-700);
-  --color-on-surface-tertiary-focus: var(--brand-700);
-  --color-on-surface-tertiary-disabled: var(--brand-300);
-  --color-on-surface-tertiary-selected: var(--brand-800);
+  --color-on-surface-tertiary: var(--gray-700);
+  --color-on-surface-tertiary-hover: var(--gray-800);
+  --color-on-surface-tertiary-active: var(--gray-700);
+  --color-on-surface-tertiary-focus: var(--gray-700);
+  --color-on-surface-tertiary-disabled: var(--gray-300);
+  --color-on-surface-tertiary-selected: var(--gray-700);
 
   --color-on-surface-warning: var(--gray-900);
   --color-on-surface-warning-hover: var(--gray-900);
