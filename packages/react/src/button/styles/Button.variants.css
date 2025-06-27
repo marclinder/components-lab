@@ -4,52 +4,52 @@
 ========================================================================== */
 
 .button.primary {
-  /* === Surface / Bg === */
+  /* === Default State === */
   --btn-bg: var(--color-surface-primary);
-  --btn-bg-hover: var(--color-surface-primary-hover);
-  --btn-bg-disabled: var(--color-surface-primary-disabled);
-
-  /* === Border === */
-  --btn-border: var(--color-border-primary);
-  --btn-border-hover: var(--color-border-primary-hover);
-  --btn-border-disabled: var(--color-border-primary-disabled);
-
-  /* === Text (on-surface) === */
   --btn-text: var(--color-on-surface-primary);
+  --btn-border: var(--color-border-primary);
+
+  /* === Hover State === */
+  --btn-bg-hover: var(--color-surface-primary-hover);
   --btn-text-hover: var(--color-on-surface-primary-hover);
+  --btn-border-hover: var(--color-border-primary-hover);
+
+  /* === Disabled State === */
+  --btn-bg-disabled: var(--color-surface-primary-disabled);
   --btn-text-disabled: var(--color-on-surface-primary-disabled);
+  --btn-border-disabled: var(--color-border-primary-disabled);
 }
 
 .button.secondary {
-  /* === Surface / Bg === */
+  /* === Default State === */
   --btn-bg: var(--color-surface-secondary);
-  --btn-bg-hover: var(--color-surface-secondary-hover);
-  --btn-bg-disabled: var(--color-surface-secondary-disabled);
-
-  /* === Border === */
-  --btn-border: var(--color-border-secondary);
-  --btn-border-hover: var(--color-border-secondary-hover);
-  --btn-border-disabled: var(--color-border-secondary-disabled);
-
-  /* === Text (on-surface) === */
   --btn-text: var(--color-on-surface-secondary);
+  --btn-border: var(--color-border-secondary);
+
+  /* === Hover State === */
+  --btn-bg-hover: var(--color-surface-secondary-hover);
   --btn-text-hover: var(--color-on-surface-secondary-hover);
+  --btn-border-hover: var(--color-border-secondary-hover);
+
+  /* === Disabled State === */
+  --btn-bg-disabled: var(--color-surface-secondary-disabled);
   --btn-text-disabled: var(--color-on-surface-secondary-disabled);
+  --btn-border-disabled: var(--color-border-secondary-disabled);
 }
 
 .button.tertiary {
-  /* === Surface / Bg === */
+  /* === Default State === */
   --btn-bg: var(--color-surface-tertiary);
-  --btn-bg-hover: var(--color-surface-tertiary-hover);
-  --btn-bg-disabled: var(--color-surface-tertiary-disabled);
-
-  /* === Border === */
-  --btn-border: var(--color-border-tertiary);
-  --btn-border-hover: var(--color-border-tertiary-hover);
-  --btn-border-disabled: var(--color-border-tertiary-disabled);
-
-  /* === Text (on-surface) === */
   --btn-text: var(--color-on-surface-tertiary);
+  --btn-border: var(--color-border-tertiary);
+
+  /* === Hover State === */
+  --btn-bg-hover: var(--color-surface-tertiary-hover);
   --btn-text-hover: var(--color-on-surface-tertiary-hover);
+  --btn-border-hover: var(--color-border-tertiary-hover);
+
+  /* === Disabled State === */
+  --btn-bg-disabled: var(--color-surface-tertiary-disabled);
   --btn-text-disabled: var(--color-on-surface-tertiary-disabled);
+  --btn-border-disabled: var(--color-border-tertiary-disabled);
 }

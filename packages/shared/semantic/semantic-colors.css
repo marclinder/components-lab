@@ -36,59 +36,7 @@
  */
 
 :root {
-  /* === BG TOKENS === */
-  /* Bg color for primary intent */
-  --color-bg-primary: var(--brand-600);
-  --color-bg-primary-hover: var(--brand-700);
-  --color-bg-primary-active: var(--brand-600);
-  --color-bg-primary-focus: var(--brand-600);
-  --color-bg-primary-disabled: var(--brand-200);
-  --color-bg-primary-selected: var(--brand-500);
-  /* Bg color for secondary intent */
-  --color-bg-secondary: var(--gray-200);
-  --color-bg-secondary-hover: var(--gray-300);
-  --color-bg-secondary-active: var(--gray-400);
-  --color-bg-secondary-focus: var(--gray-300);
-  --color-bg-secondary-disabled: var(--gray-100);
-  --color-bg-secondary-selected: var(--gray-400);
-  /* Bg color for tertiary intent */
-  --color-bg-tertiary: var(--brand-100);
-  --color-bg-tertiary-hover: var(--brand-200);
-  --color-bg-tertiary-active: var(--brand-300);
-  --color-bg-tertiary-focus: var(--brand-200);
-  --color-bg-tertiary-disabled: var(--brand-050);
-  --color-bg-tertiary-selected: var(--brand-300);
-  /* Bg color for warning intent */
-  --color-bg-warning: var(--yellow-300);
-  --color-bg-warning-hover: var(--yellow-400);
-  --color-bg-warning-active: var(--yellow-500);
-  --color-bg-warning-focus: var(--yellow-400);
-  --color-bg-warning-disabled: var(--yellow-200);
-  --color-bg-warning-selected: var(--yellow-500);
-  /* Bg color for success intent */
-  --color-bg-success: var(--green-300);
-  --color-bg-success-hover: var(--green-400);
-  --color-bg-success-active: var(--green-500);
-  --color-bg-success-focus: var(--green-400);
-  --color-bg-success-disabled: var(--green-200);
-  --color-bg-success-selected: var(--green-500);
-  /* Bg color for danger intent */
-  --color-bg-danger: var(--red-300);
-  --color-bg-danger-hover: var(--red-400);
-  --color-bg-danger-active: var(--red-500);
-  --color-bg-danger-focus: var(--red-400);
-  --color-bg-danger-disabled: var(--red-200);
-  --color-bg-danger-selected: var(--red-500);
-  /* Bg color for info intent */
-  --color-bg-info: var(--blue-300);
-  --color-bg-info-hover: var(--blue-400);
-  --color-bg-info-active: var(--blue-500);
-  --color-bg-info-focus: var(--blue-400);
-  --color-bg-info-disabled: var(--blue-200);
-  --color-bg-info-selected: var(--blue-500);
-
   /* === SURFACE TOKENS === */
-  /* Surface color for primary intent */
   --color-surface-primary: var(--brand-600);
   --color-surface-primary-hover: var(--brand-700);
   --color-surface-primary-active: var(--brand-600);
@@ -96,159 +44,183 @@
   --color-surface-primary-disabled: var(--brand-200);
   --color-surface-primary-selected: var(--brand-500);
 
-  /* Surface color for secondary intent */
-  --color-surface-secondary: var(--brand-50);
-  --color-surface-secondary-hover: var(--brand-100);
-  --color-surface-secondary-active: var(--brand-200);
-  --color-surface-secondary-focus: var(--brand-200);
-  --color-surface-secondary-disabled: var(--brand-200);
-  --color-surface-secondary-selected: var(--brand-500);
-  /* Surface color for tertiary intent */
-  --color-surface-tertiary: var(--white);
-  --color-surface-tertiary-hover: var(--gray-50);
-  --color-surface-tertiary-active: var(--gray-300);
-  --color-surface-tertiary-focus: var(--gray-200);
-  --color-surface-tertiary-disabled: var(--gray-050);
-  --color-surface-tertiary-selected: var(--gray-300);
-  /* Surface color for warning intent */
-  --color-surface-warning: var(--yellow-300);
-  --color-surface-warning-hover: var(--yellow-400);
-  --color-surface-warning-active: var(--yellow-500);
-  --color-surface-warning-focus: var(--yellow-400);
-  --color-surface-warning-disabled: var(--yellow-200);
-  --color-surface-warning-selected: var(--yellow-500);
-  /* Surface color for success intent */
-  --color-surface-success: var(--green-300);
-  --color-surface-success-hover: var(--green-400);
-  --color-surface-success-active: var(--green-500);
-  --color-surface-success-focus: var(--green-400);
+  --color-surface-success: var(--green-600);
+  --color-surface-success-hover: var(--green-700);
+  --color-surface-success-active: var(--green-600);
+  --color-surface-success-focus: var(--green-600);
   --color-surface-success-disabled: var(--green-200);
   --color-surface-success-selected: var(--green-500);
-  /* Surface color for danger intent */
-  --color-surface-danger: var(--red-300);
-  --color-surface-danger-hover: var(--red-400);
-  --color-surface-danger-active: var(--red-500);
-  --color-surface-danger-focus: var(--red-400);
+
+  --color-surface-danger: var(--red-600);
+  --color-surface-danger-hover: var(--red-700);
+  --color-surface-danger-active: var(--red-600);
+  --color-surface-danger-focus: var(--red-600);
   --color-surface-danger-disabled: var(--red-200);
   --color-surface-danger-selected: var(--red-500);
-  /* Surface color for info intent */
-  --color-surface-info: var(--blue-300);
-  --color-surface-info-hover: var(--blue-400);
-  --color-surface-info-active: var(--blue-500);
+
+  --color-surface-warning: var(--yellow-500);
+  --color-surface-warning-hover: var(--yellow-400);
+  --color-surface-warning-active: var(--yellow-300);
+  --color-surface-warning-focus: var(--yellow-300);
+  --color-surface-warning-disabled: var(--yellow-100);
+  --color-surface-warning-selected: var(--yellow-300);
+
+  --color-surface-info: var(--blue-500);
+  --color-surface-info-hover: var(--blue-600);
+  --color-surface-info-active: var(--blue-400);
   --color-surface-info-focus: var(--blue-400);
   --color-surface-info-disabled: var(--blue-200);
-  --color-surface-info-selected: var(--blue-500);
+  --color-surface-info-selected: var(--blue-400);
+
+  --color-surface-secondary: var(--brand-50);
+  --color-surface-secondary-hover: var(--brand-100);
+  --color-surface-secondary-active: var(--brand-50);
+  --color-surface-secondary-focus: var(--brand-50);
+  --color-surface-secondary-disabled: var(--brand-200);
+  --color-surface-secondary-selected: var(--brand-500);
+
+  --color-surface-tertiary: var(--white);
+  --color-surface-tertiary-hover: var(--gray-50);
+  --color-surface-tertiary-active: var(--white);
+  --color-surface-tertiary-focus: var(--white);
+  --color-surface-tertiary-disabled: var(--gray-050);
+  --color-surface-tertiary-selected: var(--gray-300);
 
   /* === TEXT TOKENS === */
-  /* Text color for primary intent */
   --color-text-primary: var(--brand-300);
   --color-text-primary-hover: var(--brand-400);
   --color-text-primary-active: var(--brand-500);
   --color-text-primary-focus: var(--brand-400);
   --color-text-primary-disabled: var(--brand-200);
   --color-text-primary-selected: var(--brand-500);
-  /* Text color for secondary intent */
-  --color-text-secondary: var(--brand-200);
-  --color-text-secondary-hover: var(--brand-200);
-  --color-text-secondary-active: var(--brand-400);
-  --color-text-secondary-focus: var(--brand-300);
-  --color-text-secondary-disabled: var(--brand-100);
-  --color-text-secondary-selected: var(--brand-400);
-  /* Text color for tertiary intent */
-  --color-text-tertiary: var(--brand-100);
-  --color-text-tertiary-hover: var(--brand-200);
-  --color-text-tertiary-active: var(--brand-300);
-  --color-text-tertiary-focus: var(--brand-200);
-  --color-text-tertiary-disabled: var(--brand-050);
-  --color-text-tertiary-selected: var(--brand-300);
-  /* Text color for warning intent */
-  --color-text-warning: var(--yellow-300);
-  --color-text-warning-hover: var(--yellow-400);
-  --color-text-warning-active: var(--yellow-500);
-  --color-text-warning-focus: var(--yellow-400);
-  --color-text-warning-disabled: var(--yellow-200);
-  --color-text-warning-selected: var(--yellow-500);
-  /* Text color for success intent */
+
   --color-text-success: var(--green-300);
   --color-text-success-hover: var(--green-400);
   --color-text-success-active: var(--green-500);
   --color-text-success-focus: var(--green-400);
   --color-text-success-disabled: var(--green-200);
   --color-text-success-selected: var(--green-500);
-  /* Text color for danger intent */
+
   --color-text-danger: var(--red-300);
   --color-text-danger-hover: var(--red-400);
   --color-text-danger-active: var(--red-500);
   --color-text-danger-focus: var(--red-400);
   --color-text-danger-disabled: var(--red-200);
   --color-text-danger-selected: var(--red-500);
-  /* Text color for info intent */
+
+  --color-text-warning: var(--yellow-300);
+  --color-text-warning-hover: var(--yellow-400);
+  --color-text-warning-active: var(--yellow-500);
+  --color-text-warning-focus: var(--yellow-400);
+  --color-text-warning-disabled: var(--yellow-100);
+  --color-text-warning-selected: var(--yellow-300);
+
   --color-text-info: var(--blue-300);
   --color-text-info-hover: var(--blue-400);
   --color-text-info-active: var(--blue-500);
   --color-text-info-focus: var(--blue-400);
   --color-text-info-disabled: var(--blue-200);
-  --color-text-info-selected: var(--blue-500);
+  --color-text-info-selected: var(--blue-400);
+
+  --color-text-secondary: var(--brand-200);
+  --color-text-secondary-hover: var(--brand-300);
+  --color-text-secondary-active: var(--brand-400);
+  --color-text-secondary-focus: var(--brand-300);
+  --color-text-secondary-disabled: var(--brand-100);
+  --color-text-secondary-selected: var(--brand-400);
+
+  --color-text-tertiary: var(--brand-100);
+  --color-text-tertiary-hover: var(--brand-200);
+  --color-text-tertiary-active: var(--brand-300);
+  --color-text-tertiary-focus: var(--brand-200);
+  --color-text-tertiary-disabled: var(--brand-050);
+  --color-text-tertiary-selected: var(--brand-300);
 
   /* === BORDER TOKENS === */
-  /* Border color for primary intent */
   --color-border-primary: var(--brand-600);
   --color-border-primary-hover: var(--brand-700);
   --color-border-primary-active: var(--brand-500);
   --color-border-primary-focus: var(--brand-400);
   --color-border-primary-disabled: var(--brand-200);
   --color-border-primary-selected: var(--brand-500);
-  /* Border color for secondary intent */
+
+  --color-border-success: var(--green-600);
+  --color-border-success-hover: var(--green-700);
+  --color-border-success-active: var(--green-500);
+  --color-border-success-focus: var(--green-400);
+  --color-border-success-disabled: var(--green-200);
+  --color-border-success-selected: var(--green-500);
+
+  --color-border-danger: var(--red-600);
+  --color-border-danger-hover: var(--red-700);
+  --color-border-danger-active: var(--red-500);
+  --color-border-danger-focus: var(--red-400);
+  --color-border-danger-disabled: var(--red-200);
+  --color-border-danger-selected: var(--red-500);
+
+  --color-border-warning: var(--yellow-500);
+  --color-border-warning-hover: var(--yellow-400);
+  --color-border-warning-active: var(--yellow-300);
+  --color-border-warning-focus: var(--yellow-300);
+  --color-border-warning-disabled: var(--yellow-100);
+  --color-border-warning-selected: var(--yellow-300);
+
+  --color-border-info: var(--blue-500);
+  --color-border-info-hover: var(--blue-600);
+  --color-border-info-active: var(--blue-400);
+  --color-border-info-focus: var(--blue-400);
+  --color-border-info-disabled: var(--blue-200);
+  --color-border-info-selected: var(--blue-400);
+
   --color-border-secondary: var(--brand-50);
   --color-border-secondary-hover: var(--brand-50);
   --color-border-secondary-active: var(--brand-400);
   --color-border-secondary-focus: var(--brand-300);
   --color-border-secondary-disabled: var(--brand-100);
   --color-border-secondary-selected: var(--brand-400);
-  /* Border color for tertiary intent */
+
   --color-border-tertiary: var(--gray-300);
   --color-border-tertiary-hover: var(--gray-200);
   --color-border-tertiary-active: var(--gray-300);
   --color-border-tertiary-focus: var(--gray-200);
   --color-border-tertiary-disabled: var(--gray-050);
   --color-border-tertiary-selected: var(--gray-300);
-  /* Border color for warning intent */
-  --color-border-warning: var(--yellow-300);
-  --color-border-warning-hover: var(--yellow-400);
-  --color-border-warning-active: var(--yellow-500);
-  --color-border-warning-focus: var(--yellow-400);
-  --color-border-warning-disabled: var(--yellow-200);
-  --color-border-warning-selected: var(--yellow-500);
-  /* Border color for success intent */
-  --color-border-success: var(--green-300);
-  --color-border-success-hover: var(--green-400);
-  --color-border-success-active: var(--green-500);
-  --color-border-success-focus: var(--green-400);
-  --color-border-success-disabled: var(--green-200);
-  --color-border-success-selected: var(--green-500);
-  /* Border color for danger intent */
-  --color-border-danger: var(--red-300);
-  --color-border-danger-hover: var(--red-400);
-  --color-border-danger-active: var(--red-500);
-  --color-border-danger-focus: var(--red-400);
-  --color-border-danger-disabled: var(--red-200);
-  --color-border-danger-selected: var(--red-500);
-  /* Border color for info intent */
-  --color-border-info: var(--blue-300);
-  --color-border-info-hover: var(--blue-400);
-  --color-border-info-active: var(--blue-500);
-  --color-border-info-focus: var(--blue-400);
-  --color-border-info-disabled: var(--blue-200);
-  --color-border-info-selected: var(--blue-500);
 
   /* === ON-SURFACE TOKENS === */
-  /* Text/icon colors that appear ON TOP OF a surface of a given intent */
   --color-on-surface-primary: var(--white);
   --color-on-surface-primary-hover: var(--white);
   --color-on-surface-primary-active: var(--white);
   --color-on-surface-primary-focus: var(--white);
   --color-on-surface-primary-disabled: var(--white);
   --color-on-surface-primary-selected: var(--white);
+
+  --color-on-surface-success: var(--white);
+  --color-on-surface-success-hover: var(--white);
+  --color-on-surface-success-active: var(--white);
+  --color-on-surface-success-focus: var(--white);
+  --color-on-surface-success-disabled: var(--white);
+  --color-on-surface-success-selected: var(--white);
+
+  --color-on-surface-danger: var(--white);
+  --color-on-surface-danger-hover: var(--white);
+  --color-on-surface-danger-active: var(--white);
+  --color-on-surface-danger-focus: var(--white);
+  --color-on-surface-danger-disabled: var(--white);
+  --color-on-surface-danger-selected: var(--white);
+
+  --color-on-surface-warning: var(--white);
+  --color-on-surface-warning-hover: var(--white);
+  --color-on-surface-warning-active: var(--white);
+  --color-on-surface-warning-focus: var(--white);
+  --color-on-surface-warning-disabled: var(--gray-600);
+  --color-on-surface-warning-selected: var(--white);
+
+  --color-on-surface-info: var(--white);
+  --color-on-surface-info-hover: var(--white);
+  --color-on-surface-info-active: var(--white);
+  --color-on-surface-info-focus: var(--white);
+  --color-on-surface-info-disabled: var(--white);
+  --color-on-surface-info-selected: var(--white);
 
   --color-on-surface-secondary: var(--brand-700);
   --color-on-surface-secondary-hover: var(--brand-700);
@@ -263,32 +235,4 @@
   --color-on-surface-tertiary-focus: var(--gray-700);
   --color-on-surface-tertiary-disabled: var(--gray-300);
   --color-on-surface-tertiary-selected: var(--gray-700);
-
-  --color-on-surface-warning: var(--gray-900);
-  --color-on-surface-warning-hover: var(--gray-900);
-  --color-on-surface-warning-active: var(--gray-900);
-  --color-on-surface-warning-focus: var(--gray-900);
-  --color-on-surface-warning-disabled: var(--gray-600);
-  --color-on-surface-warning-selected: var(--gray-900);
-
-  --color-on-surface-success: var(--white);
-  --color-on-surface-success-hover: var(--white);
-  --color-on-surface-success-active: var(--white);
-  --color-on-surface-success-focus: var(--white);
-  --color-on-surface-success-disabled: var(--gray-300);
-  --color-on-surface-success-selected: var(--white);
-
-  --color-on-surface-danger: var(--white);
-  --color-on-surface-danger-hover: var(--white);
-  --color-on-surface-danger-active: var(--white);
-  --color-on-surface-danger-focus: var(--white);
-  --color-on-surface-danger-disabled: var(--gray-300);
-  --color-on-surface-danger-selected: var(--white);
-
-  --color-on-surface-info: var(--white);
-  --color-on-surface-info-hover: var(--white);
-  --color-on-surface-info-active: var(--white);
-  --color-on-surface-info-focus: var(--white);
-  --color-on-surface-info-disabled: var(--gray-300);
-  --color-on-surface-info-selected: var(--white);
 }
