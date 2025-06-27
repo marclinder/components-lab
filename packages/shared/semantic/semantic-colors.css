@@ -19,7 +19,7 @@
  *
  * This file defines semantic design tokens that map to core color primitives.
  * Instead of referencing raw colors like `--gray-900` or `--brand-600` directly,
- * components should use these role-based tokens (e.g. `--color-text-primary`, `--color-error`).
+ * components should use these role-based tokens (e.g. `--color-text-primary`, `--color-danger`).
  *
  * Benefits:
  * - Improves clarity and maintainability by using intent-based naming
@@ -38,10 +38,10 @@
 :root {
   /* === BG TOKENS === */
   /* Bg color for primary intent */
-  --color-bg-primary: var(--brand-300);
-  --color-bg-primary-hover: var(--brand-400);
-  --color-bg-primary-active: var(--brand-500);
-  --color-bg-primary-focus: var(--brand-400);
+  --color-bg-primary: var(--brand-600);
+  --color-bg-primary-hover: var(--brand-700);
+  --color-bg-primary-active: var(--brand-600);
+  --color-bg-primary-focus: var(--brand-600);
   --color-bg-primary-disabled: var(--brand-200);
   --color-bg-primary-selected: var(--brand-500);
   /* Bg color for secondary intent */
@@ -89,12 +89,13 @@
 
   /* === SURFACE TOKENS === */
   /* Surface color for primary intent */
-  --color-surface-primary: var(--brand-300);
-  --color-surface-primary-hover: var(--brand-400);
-  --color-surface-primary-active: var(--brand-500);
-  --color-surface-primary-focus: var(--brand-400);
+  --color-surface-primary: var(--brand-600);
+  --color-surface-primary-hover: var(--brand-700);
+  --color-surface-primary-active: var(--brand-600);
+  --color-surface-primary-focus: var(--brand-600);
   --color-surface-primary-disabled: var(--brand-200);
   --color-surface-primary-selected: var(--brand-500);
+
   /* Surface color for secondary intent */
   --color-surface-secondary: var(--brand-200);
   --color-surface-secondary-hover: var(--brand-300);
@@ -239,4 +240,55 @@
   --color-border-info-focus: var(--blue-400);
   --color-border-info-disabled: var(--blue-200);
   --color-border-info-selected: var(--blue-500);
+
+  /* === ON-SURFACE TOKENS === */
+  /* Text/icon colors that appear ON TOP OF a surface of a given intent */
+  --color-on-surface-primary: var(--white);
+  --color-on-surface-primary-hover: var(--white);
+  --color-on-surface-primary-active: var(--white);
+  --color-on-surface-primary-focus: var(--white);
+  --color-on-surface-primary-disabled: var(--gray-300);
+  --color-on-surface-primary-selected: var(--white);
+
+  --color-on-surface-secondary: var(--gray-900);
+  --color-on-surface-secondary-hover: var(--gray-900);
+  --color-on-surface-secondary-active: var(--gray-900);
+  --color-on-surface-secondary-focus: var(--gray-900);
+  --color-on-surface-secondary-disabled: var(--gray-500);
+  --color-on-surface-secondary-selected: var(--gray-900);
+
+  --color-on-surface-tertiary: var(--brand-700);
+  --color-on-surface-tertiary-hover: var(--brand-700);
+  --color-on-surface-tertiary-active: var(--brand-700);
+  --color-on-surface-tertiary-focus: var(--brand-700);
+  --color-on-surface-tertiary-disabled: var(--brand-300);
+  --color-on-surface-tertiary-selected: var(--brand-800);
+
+  --color-on-surface-warning: var(--gray-900);
+  --color-on-surface-warning-hover: var(--gray-900);
+  --color-on-surface-warning-active: var(--gray-900);
+  --color-on-surface-warning-focus: var(--gray-900);
+  --color-on-surface-warning-disabled: var(--gray-600);
+  --color-on-surface-warning-selected: var(--gray-900);
+
+  --color-on-surface-success: var(--white);
+  --color-on-surface-success-hover: var(--white);
+  --color-on-surface-success-active: var(--white);
+  --color-on-surface-success-focus: var(--white);
+  --color-on-surface-success-disabled: var(--gray-300);
+  --color-on-surface-success-selected: var(--white);
+
+  --color-on-surface-danger: var(--white);
+  --color-on-surface-danger-hover: var(--white);
+  --color-on-surface-danger-active: var(--white);
+  --color-on-surface-danger-focus: var(--white);
+  --color-on-surface-danger-disabled: var(--gray-300);
+  --color-on-surface-danger-selected: var(--white);
+
+  --color-on-surface-info: var(--white);
+  --color-on-surface-info-hover: var(--white);
+  --color-on-surface-info-active: var(--white);
+  --color-on-surface-info-focus: var(--white);
+  --color-on-surface-info-disabled: var(--gray-300);
+  --color-on-surface-info-selected: var(--white);
 }

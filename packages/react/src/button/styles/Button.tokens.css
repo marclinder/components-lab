@@ -8,18 +8,18 @@
 
 /* === default === */
 .button {
-  /* === Default State === */
-  --color-bg: var(--bg-primary);
-  --color-border: var(--border-primary);
-  --color-text: var(--text-primary);
+  /* === Surface / Bg === */
+  --color-bg: var(--color-surface-primary);
+  --color-bg-hover: var(--color-surface-primary-hover);
+  --color-bg-disabled: var(--color-surface-primary-disabled);
 
-  /* === Hover State === */
-  --color-hover-bg: var(--bg-primary-hover);
-  --color-hover-border: var(--border-primary-hover);
-  --color-hover-text: var(--text-primary-hover);
+  /* === Border === */
+  --color-border: var(--color-border-primary);
+  --color-border-hover: var(--color-border-primary-hover);
+  --color-border-disabled: var(--color-border-primary-disabled);
 
-  /* === Disabled State === */
-  --color-disabled-bg: var(--bg-primary-disabled);
-  --color-disabled-border: var(--border-primary-disabled);
-  --color-disabled-text: var(--text-primary-disabled);
+  /* === Text (on-surface) === */
+  --color-text: var(--color-on-surface-primary);
+  --color-text-hover: var(--color-on-surface-primary-hover);
+  --color-text-disabled: var(--color-on-surface-primary-disabled);
 }

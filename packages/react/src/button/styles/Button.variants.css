@@ -1,56 +1,55 @@
 /* ==========================================================================
    BUTTON VARIANTS MODULE — Variant-specific tokens and overrides
-   ========================================================================= */
-
-/* Primary .button.primary uses default tokens from */
+   Applied via intent classes like .button.primary
+========================================================================== */
 
 .button.primary {
-  /* === Default State === */
-  --color-bg: var(--color-surface-primary);
-  --color-border: var(--color-border-primary);
-  --color-text: var(--color-text-primary);
+  /* === Surface / Bg === */
+  --btn-bg: var(--color-surface-primary);
+  --btn-bg-hover: var(--color-surface-primary-hover);
+  --btn-bg-disabled: var(--color-surface-primary-disabled);
 
-  /* === Hover State === */
-  --color-hover-bg: var(--color-surface-primary-hover);
-  --color-hover-border: var(--color-border-primary-hover);
-  --color-hover-text: var(--color-text-primary-hover);
+  /* === Border === */
+  --btn-border: var(--color-border-primary);
+  --btn-border-hover: var(--color-border-primary-hover);
+  --btn-border-disabled: var(--color-border-primary-disabled);
 
-  /* === Disabled State === */
-  --color-disabled-bg: var(--color-surface-primary-disabled);
-  --color-disabled-border: var(--color-border-primary-disabled);
-  --color-disabled-text: var(--color-text-primary-disabled);
+  /* === Text (on-surface) === */
+  --btn-text: var(--color-on-surface-primary);
+  --btn-text-hover: var(--color-on-surface-primary-hover);
+  --btn-text-disabled: var(--color-on-surface-primary-disabled);
 }
 
 .button.secondary {
-  /* === Default State === */
-  --color-bg: var(--color-surface-secondary);
-  --color-border: var(--color-border-secondary);
-  --color-text: var(--color-text-secondary);
+  /* === Surface / Bg === */
+  --btn-bg: var(--color-surface-secondary);
+  --btn-bg-hover: var(--color-surface-secondary-hover);
+  --btn-bg-disabled: var(--color-surface-secondary-disabled);
 
-  /* === Hover State === */
-  --color-hover-bg: var(--color-surface-secondary-hover);
-  --color-hover-border: var(--color-border-secondary-hover);
-  --color-hover-text: var(--color-text-secondary-hover);
+  /* === Border === */
+  --btn-border: var(--color-border-secondary);
+  --btn-border-hover: var(--color-border-secondary-hover);
+  --btn-border-disabled: var(--color-border-secondary-disabled);
 
-  /* === Disabled State === */
-  --color-disabled-bg: var(--color-surface-secondary-disabled);
-  --color-disabled-border: var(--color-border-secondary-disabled);
-  --color-disabled-text: var(--color-text-secondary-disabled);
+  /* === Text (on-surface) === */
+  --btn-text: var(--color-on-surface-secondary);
+  --btn-text-hover: var(--color-on-surface-secondary-hover);
+  --btn-text-disabled: var(--color-on-surface-secondary-disabled);
 }
 
 .button.tertiary {
-  /* === Default State === */
-  --color-bg: var(--color-surface-tertiary);
-  --color-border: var(--color-border-tertiary);
-  --color-text: var(--color-text-tertiary);
+  /* === Surface / Bg === */
+  --btn-bg: var(--color-surface-tertiary);
+  --btn-bg-hover: var(--color-surface-tertiary-hover);
+  --btn-bg-disabled: var(--color-surface-tertiary-disabled);
 
-  /* === Hover State === */
-  --color-hover-bg: var(--color-surface-tertiary-hover);
-  --color-hover-border: var(--color-border-tertiary-hover);
-  --color-hover-text: var(--color-text-tertiary-hover);
+  /* === Border === */
+  --btn-border: var(--color-border-tertiary);
+  --btn-border-hover: var(--color-border-tertiary-hover);
+  --btn-border-disabled: var(--color-border-tertiary-disabled);
 
-  /* === Disabled State === */
-  --color-disabled-bg: var(--color-surface-tertiary-disabled);
-  --color-disabled-border: var(--color-border-tertiary-disabled);
-  --color-disabled-text: var(--color-text-tertiary-disabled);
+  /* === Text (on-surface) === */
+  --btn-text: var(--color-on-surface-tertiary);
+  --btn-text-hover: var(--color-on-surface-tertiary-hover);
+  --btn-text-disabled: var(--color-on-surface-tertiary-disabled);
 }

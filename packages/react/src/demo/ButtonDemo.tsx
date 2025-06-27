@@ -18,6 +18,10 @@ export function ButtonDemo() {
           for low-emphasis actions.
         </p>
 
+        <Button intent="success" action={() => window.alert("Click")}>
+          Success ?
+        </Button>
+
         <div className="demo-row">
           <Button variant="primary" action={() => window.alert("Click")}>
             Primary
@@ -41,10 +45,18 @@ export function ButtonDemo() {
 
         <h2>Sizes</h2>
         <div className="demo-row">
-          <Button size="sm">Small</Button>
-          <Button size="md">Medium</Button>
-          <Button size="lg">Large</Button>
-          <Button size="xl">Extra Large</Button>
+          <Button variant="primary" size="sm">
+            Small
+          </Button>
+          <Button variant="primary" size="md">
+            Medium
+          </Button>
+          <Button variant="primary" size="lg">
+            Large
+          </Button>
+          <Button variant="primary" size="xl">
+            Extra Large
+          </Button>
         </div>
 
         <h2>Icon Buttons</h2>

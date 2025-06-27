@@ -41,7 +41,7 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   disabled = false,
   action,
-  variant = "primary",
+  variant,
   size = "sm",
   intent,
   iconOnly = false,
@@ -51,12 +51,14 @@ export const Button: React.FC<ButtonProps> = ({
   const classNames = clsx(
     styles.button,
     styles[size],
-    styles[variant],
+    variant && styles[variant],
     intent && styles[intent],
     iconOnly && styles["icon-only"],
     disabled && styles.disabled,
     className,
   );
+
+  // const classNames = clsx(styles[size], styles[intent], styles.button);
   console.log("Button rendered with classNames:", classNames);
   return (
     <button
